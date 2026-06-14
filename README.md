@@ -133,6 +133,24 @@ chmod +x run-linux.sh && ./run-linux.sh
 └── requirements.txt         # Python dependencies
 ```
 
+
+---
+
+## Note on Excluded Files
+
+> **This repository does not include the following due to GitHub's 100 MB file size limit:**
+>
+> - `rag_dataset/` — The full collected dataset (10,787 documents across 9 collections). To regenerate, run:
+>   ```bash
+>   python -m dataset_rag_builder.cli --rq1-query-alignment
+>   ```
+> - `rq1_experiment/results/raw_outputs/` — Per-query RAG outputs for all 12 conditions. To regenerate, run:
+>   ```bash
+>   python -m rq1_experiment.run_experiment
+>   ```
+> - `rq1_experiment/results/faiss_indexes/` — FAISS vector indexes per condition. Rebuilt automatically during experiment execution.
+>
+> All other results (metrics, analysis, plots, trained models, validation) are included and the framework app runs standalone without these files.
 ---
 
 ## License
