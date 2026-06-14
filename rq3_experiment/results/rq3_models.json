@@ -1,0 +1,1030 @@
+{
+  "n_samples": 2400,
+  "n_features": 24,
+  "ols": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "n": 2400,
+      "r_squared": 0.027259,
+      "adj_r_squared": 0.02482,
+      "f_p_value": 0.0,
+      "coefficients": {
+        "intercept": {
+          "coef": 0.80801,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "freshness_score": {
+          "coef": -0.013542,
+          "p_value": 0.755327,
+          "significant": false
+        },
+        "source_diversity_index": {
+          "coef": -0.067159,
+          "p_value": 0.026278,
+          "significant": true
+        },
+        "domain_volatility": {
+          "coef": -0.037149,
+          "p_value": 0.616732,
+          "significant": false
+        },
+        "fresh_x_diversity": {
+          "coef": 0.109497,
+          "p_value": 0.00099,
+          "significant": true
+        },
+        "fresh_x_volatility": {
+          "coef": 0.004487,
+          "p_value": 0.954609,
+          "significant": false
+        },
+        "source_x_volatility": {
+          "coef": -0.028943,
+          "p_value": 0.088895,
+          "significant": false
+        }
+      },
+      "cv_bounds": {
+        "mae_mean": 0.118637,
+        "mae_std": 0.005544,
+        "rmse_mean": 0.13548,
+        "rmse_std": 0.005856
+      }
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "n": 2400,
+      "r_squared": 0.029522,
+      "adj_r_squared": 0.027089,
+      "f_p_value": 0.0,
+      "coefficients": {
+        "intercept": {
+          "coef": 0.388704,
+          "p_value": 0.008406,
+          "significant": true
+        },
+        "freshness_score": {
+          "coef": 0.196612,
+          "p_value": 0.213099,
+          "significant": false
+        },
+        "source_diversity_index": {
+          "coef": -0.144295,
+          "p_value": 0.188671,
+          "significant": false
+        },
+        "domain_volatility": {
+          "coef": 0.574486,
+          "p_value": 0.033226,
+          "significant": true
+        },
+        "fresh_x_diversity": {
+          "coef": 0.312977,
+          "p_value": 0.009542,
+          "significant": true
+        },
+        "fresh_x_volatility": {
+          "coef": -0.701438,
+          "p_value": 0.014393,
+          "significant": true
+        },
+        "source_x_volatility": {
+          "coef": -0.242789,
+          "p_value": 8.8e-05,
+          "significant": true
+        }
+      },
+      "cv_bounds": {
+        "mae_mean": 0.483659,
+        "mae_std": 0.003499,
+        "rmse_mean": 0.492479,
+        "rmse_std": 0.003683
+      }
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "n": 2400,
+      "r_squared": 0.202368,
+      "adj_r_squared": 0.200368,
+      "f_p_value": 0.0,
+      "coefficients": {
+        "intercept": {
+          "coef": 0.135793,
+          "p_value": 0.112867,
+          "significant": false
+        },
+        "freshness_score": {
+          "coef": 0.385372,
+          "p_value": 2.7e-05,
+          "significant": true
+        },
+        "source_diversity_index": {
+          "coef": -0.172691,
+          "p_value": 0.006802,
+          "significant": true
+        },
+        "domain_volatility": {
+          "coef": 0.732433,
+          "p_value": 3e-06,
+          "significant": true
+        },
+        "fresh_x_diversity": {
+          "coef": 0.28687,
+          "p_value": 4.4e-05,
+          "significant": true
+        },
+        "fresh_x_volatility": {
+          "coef": -1.097557,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "source_x_volatility": {
+          "coef": 0.008146,
+          "p_value": 0.820484,
+          "significant": false
+        }
+      },
+      "cv_bounds": {
+        "mae_mean": 0.222381,
+        "mae_std": 0.012021,
+        "rmse_mean": 0.285973,
+        "rmse_std": 0.013302
+      }
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "n": 2400,
+      "r_squared": 0.144873,
+      "adj_r_squared": 0.142729,
+      "f_p_value": 0.0,
+      "coefficients": {
+        "intercept": {
+          "coef": 0.330887,
+          "p_value": 0.005585,
+          "significant": true
+        },
+        "freshness_score": {
+          "coef": 0.533461,
+          "p_value": 3.1e-05,
+          "significant": true
+        },
+        "source_diversity_index": {
+          "coef": -0.354905,
+          "p_value": 6.7e-05,
+          "significant": true
+        },
+        "domain_volatility": {
+          "coef": 1.143779,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "fresh_x_diversity": {
+          "coef": 0.458613,
+          "p_value": 3e-06,
+          "significant": true
+        },
+        "fresh_x_volatility": {
+          "coef": -1.575469,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "source_x_volatility": {
+          "coef": -0.00163,
+          "p_value": 0.974007,
+          "significant": false
+        }
+      },
+      "cv_bounds": {
+        "mae_mean": 0.310017,
+        "mae_std": 0.016693,
+        "rmse_mean": 0.398305,
+        "rmse_std": 0.020265
+      }
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "n": 2400,
+      "r_squared": 0.3022,
+      "adj_r_squared": 0.300451,
+      "f_p_value": 0.0,
+      "coefficients": {
+        "intercept": {
+          "coef": 2.331808,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "freshness_score": {
+          "coef": 1.407625,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "source_diversity_index": {
+          "coef": -0.358523,
+          "p_value": 0.000506,
+          "significant": true
+        },
+        "domain_volatility": {
+          "coef": 2.014652,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "fresh_x_diversity": {
+          "coef": 0.860828,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "fresh_x_volatility": {
+          "coef": -2.62874,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "source_x_volatility": {
+          "coef": -0.235913,
+          "p_value": 4.9e-05,
+          "significant": true
+        }
+      },
+      "cv_bounds": {
+        "mae_mean": 0.302122,
+        "mae_std": 0.028676,
+        "rmse_mean": 0.459978,
+        "rmse_std": 0.047863
+      }
+    }
+  },
+  "random_forest": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "n": 2400,
+      "n_features": 10,
+      "features": [
+        "freshness_score",
+        "source_diversity_index",
+        "domain_volatility",
+        "avg_similarity",
+        "min_similarity",
+        "relevant_doc_count",
+        "response_length",
+        "fresh_x_diversity",
+        "fresh_x_volatility",
+        "source_x_volatility"
+      ],
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2
+      },
+      "feature_importances": {
+        "freshness_score": 0.09045,
+        "source_diversity_index": 0.003494,
+        "domain_volatility": 0.00486,
+        "avg_similarity": 0.088328,
+        "min_similarity": 0.077709,
+        "relevant_doc_count": 0.027682,
+        "response_length": 0.615363,
+        "fresh_x_diversity": 0.024932,
+        "fresh_x_volatility": 0.06373,
+        "source_x_volatility": 0.003452
+      },
+      "cv_bounds": {
+        "mae_mean": 0.047322,
+        "mae_std": 0.004433,
+        "rmse_mean": 0.071876,
+        "rmse_std": 0.006388
+      }
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "n": 2400,
+      "n_features": 10,
+      "features": [
+        "freshness_score",
+        "source_diversity_index",
+        "domain_volatility",
+        "avg_similarity",
+        "min_similarity",
+        "relevant_doc_count",
+        "response_length",
+        "fresh_x_diversity",
+        "fresh_x_volatility",
+        "source_x_volatility"
+      ],
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2
+      },
+      "feature_importances": {
+        "freshness_score": 0.125545,
+        "source_diversity_index": 0.007005,
+        "domain_volatility": 0.00453,
+        "avg_similarity": 0.121672,
+        "min_similarity": 0.138701,
+        "relevant_doc_count": 0.091417,
+        "response_length": 0.39176,
+        "fresh_x_diversity": 0.03784,
+        "fresh_x_volatility": 0.071659,
+        "source_x_volatility": 0.009872
+      },
+      "cv_bounds": {
+        "mae_mean": 0.233479,
+        "mae_std": 0.010709,
+        "rmse_mean": 0.32556,
+        "rmse_std": 0.015094
+      }
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "n": 2400,
+      "n_features": 10,
+      "features": [
+        "freshness_score",
+        "source_diversity_index",
+        "domain_volatility",
+        "avg_similarity",
+        "min_similarity",
+        "relevant_doc_count",
+        "response_length",
+        "fresh_x_diversity",
+        "fresh_x_volatility",
+        "source_x_volatility"
+      ],
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5
+      },
+      "feature_importances": {
+        "freshness_score": 0.141203,
+        "source_diversity_index": 0.004295,
+        "domain_volatility": 0.006583,
+        "avg_similarity": 0.125933,
+        "min_similarity": 0.115626,
+        "relevant_doc_count": 0.04801,
+        "response_length": 0.127466,
+        "fresh_x_diversity": 0.058659,
+        "fresh_x_volatility": 0.368582,
+        "source_x_volatility": 0.003645
+      },
+      "cv_bounds": {
+        "mae_mean": 0.225392,
+        "mae_std": 0.010676,
+        "rmse_mean": 0.288192,
+        "rmse_std": 0.012576
+      }
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "n": 2400,
+      "n_features": 10,
+      "features": [
+        "freshness_score",
+        "source_diversity_index",
+        "domain_volatility",
+        "avg_similarity",
+        "min_similarity",
+        "relevant_doc_count",
+        "response_length",
+        "fresh_x_diversity",
+        "fresh_x_volatility",
+        "source_x_volatility"
+      ],
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5
+      },
+      "feature_importances": {
+        "freshness_score": 0.114142,
+        "source_diversity_index": 0.003226,
+        "domain_volatility": 0.012589,
+        "avg_similarity": 0.153418,
+        "min_similarity": 0.163033,
+        "relevant_doc_count": 0.036932,
+        "response_length": 0.153963,
+        "fresh_x_diversity": 0.022393,
+        "fresh_x_volatility": 0.33617,
+        "source_x_volatility": 0.004136
+      },
+      "cv_bounds": {
+        "mae_mean": 0.311949,
+        "mae_std": 0.014268,
+        "rmse_mean": 0.402879,
+        "rmse_std": 0.01326
+      }
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "n": 2400,
+      "n_features": 14,
+      "features": [
+        "freshness_score",
+        "source_diversity_index",
+        "domain_volatility",
+        "avg_similarity",
+        "min_similarity",
+        "relevant_doc_count",
+        "response_length",
+        "fresh_x_diversity",
+        "fresh_x_volatility",
+        "source_x_volatility",
+        "per_query_bertscore",
+        "per_query_hallucination",
+        "per_query_rouge_l",
+        "per_query_meteor"
+      ],
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5
+      },
+      "feature_importances": {
+        "freshness_score": 0.084571,
+        "source_diversity_index": 0.002126,
+        "domain_volatility": 0.119151,
+        "avg_similarity": 0.122714,
+        "min_similarity": 0.098836,
+        "relevant_doc_count": 0.014226,
+        "response_length": 0.078272,
+        "fresh_x_diversity": 0.014653,
+        "fresh_x_volatility": 0.28231,
+        "source_x_volatility": 0.001971,
+        "per_query_bertscore": 0.058141,
+        "per_query_hallucination": 0.004885,
+        "per_query_rouge_l": 0.051299,
+        "per_query_meteor": 0.066845
+      },
+      "cv_bounds": {
+        "mae_mean": 0.245245,
+        "mae_std": 0.016242,
+        "rmse_mean": 0.411391,
+        "rmse_std": 0.024827
+      }
+    }
+  },
+  "xgboost": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "n": 2400,
+      "best_params": {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importances": {
+        "freshness_score": 0.055437,
+        "source_diversity_index": 0.03668,
+        "domain_volatility": 0.172511,
+        "avg_similarity": 0.063392,
+        "min_similarity": 0.06599,
+        "relevant_doc_count": 0.087452,
+        "response_length": 0.353257,
+        "fresh_x_diversity": 0.054316,
+        "fresh_x_volatility": 0.081739,
+        "source_x_volatility": 0.029227
+      },
+      "cv_bounds": {
+        "mae_mean": 0.06462,
+        "mae_std": 0.004663,
+        "rmse_mean": 0.087426,
+        "rmse_std": 0.005718
+      }
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "n": 2400,
+      "best_params": {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importances": {
+        "freshness_score": 0.07605,
+        "source_diversity_index": 0.055341,
+        "domain_volatility": 0.052996,
+        "avg_similarity": 0.083527,
+        "min_similarity": 0.09369,
+        "relevant_doc_count": 0.149401,
+        "response_length": 0.243013,
+        "fresh_x_diversity": 0.09006,
+        "fresh_x_volatility": 0.083376,
+        "source_x_volatility": 0.072546
+      },
+      "cv_bounds": {
+        "mae_mean": 0.326219,
+        "mae_std": 0.011568,
+        "rmse_mean": 0.405183,
+        "rmse_std": 0.014234
+      }
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "n": 2400,
+      "best_params": {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importances": {
+        "freshness_score": 0.067498,
+        "source_diversity_index": 0.062231,
+        "domain_volatility": 0.222013,
+        "avg_similarity": 0.062727,
+        "min_similarity": 0.06848,
+        "relevant_doc_count": 0.086559,
+        "response_length": 0.063955,
+        "fresh_x_diversity": 0.080773,
+        "fresh_x_volatility": 0.217813,
+        "source_x_volatility": 0.067952
+      },
+      "cv_bounds": {
+        "mae_mean": 0.231474,
+        "mae_std": 0.01075,
+        "rmse_mean": 0.297906,
+        "rmse_std": 0.013223
+      }
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "n": 2400,
+      "best_params": {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importances": {
+        "freshness_score": 0.081296,
+        "source_diversity_index": 0.058356,
+        "domain_volatility": 0.204013,
+        "avg_similarity": 0.078425,
+        "min_similarity": 0.086425,
+        "relevant_doc_count": 0.068646,
+        "response_length": 0.082455,
+        "fresh_x_diversity": 0.077008,
+        "fresh_x_volatility": 0.202439,
+        "source_x_volatility": 0.060937
+      },
+      "cv_bounds": {
+        "mae_mean": 0.32917,
+        "mae_std": 0.012961,
+        "rmse_mean": 0.418038,
+        "rmse_std": 0.013237
+      }
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "n": 2400,
+      "best_params": {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importances": {
+        "freshness_score": 0.077877,
+        "source_diversity_index": 0.041634,
+        "domain_volatility": 0.144917,
+        "avg_similarity": 0.067974,
+        "min_similarity": 0.068072,
+        "relevant_doc_count": 0.103449,
+        "response_length": 0.085726,
+        "fresh_x_diversity": 0.063028,
+        "fresh_x_volatility": 0.275423,
+        "source_x_volatility": 0.0719
+      },
+      "cv_bounds": {
+        "mae_mean": 0.306067,
+        "mae_std": 0.016936,
+        "rmse_mean": 0.462257,
+        "rmse_std": 0.031629
+      }
+    }
+  },
+  "decay_curves": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "domains": {
+        "healthcare": {
+          "exponential": {
+            "params": [
+              0.000631,
+              -4.03422,
+              0.752343
+            ],
+            "r_squared": 0.001825
+          },
+          "polynomial": {
+            "params": [
+              0.288711,
+              -0.286528,
+              0.815497
+            ],
+            "r_squared": 0.004713
+          },
+          "logistic": {
+            "params": [
+              4.394908,
+              0.037091,
+              42.701503
+            ],
+            "r_squared": 0.001287
+          }
+        },
+        "history": {
+          "exponential": {
+            "params": [
+              52.727907,
+              0.00236,
+              -51.792566
+            ],
+            "r_squared": 0.010882
+          },
+          "polynomial": {
+            "params": [
+              -0.123485,
+              0.046938,
+              0.885937
+            ],
+            "r_squared": 0.011681
+          },
+          "logistic": {
+            "params": [
+              0.932487,
+              -1.720378,
+              2.096819
+            ],
+            "r_squared": 0.01144
+          }
+        },
+        "technology": {
+          "exponential": {
+            "params": [
+              6.67129,
+              0.024438,
+              -5.756422
+            ],
+            "r_squared": 0.006213
+          },
+          "polynomial": {
+            "params": [
+              -6.652816,
+              12.093264,
+              -4.698232
+            ],
+            "r_squared": 0.0098
+          },
+          "logistic": {
+            "params": [
+              0.777649,
+              -53.629029,
+              1.054663
+            ],
+            "r_squared": 0.008021
+          }
+        }
+      }
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "domains": {
+        "healthcare": {
+          "exponential": {
+            "params": [
+              170.062846,
+              -0.001303,
+              -169.633361
+            ],
+            "r_squared": 0.009862
+          },
+          "polynomial": {
+            "params": [
+              -1.121496,
+              1.424911,
+              0.168307
+            ],
+            "r_squared": 0.014227
+          },
+          "logistic": {
+            "params": [
+              0.619566,
+              4.668674,
+              0.011823
+            ],
+            "r_squared": 0.011634
+          }
+        },
+        "history": {
+          "exponential": {
+            "params": [
+              17.992625,
+              -0.004772,
+              -17.44173
+            ],
+            "r_squared": 0.00035
+          },
+          "polynomial": {
+            "params": [
+              -0.556039,
+              0.857303,
+              0.328331
+            ],
+            "r_squared": 0.001428
+          },
+          "logistic": {
+            "params": [
+              0.636153,
+              7.213392,
+              0.050275
+            ],
+            "r_squared": 0.001311
+          }
+        },
+        "technology": {
+          "exponential": {
+            "params": [
+              8.626374,
+              0.096443,
+              -7.414507
+            ],
+            "r_squared": 0.010495
+          },
+          "polynomial": {
+            "params": [
+              -5.379503,
+              9.146177,
+              -3.357355
+            ],
+            "r_squared": 0.010672
+          },
+          "logistic": {
+            "params": [
+              0.52836,
+              -43.717451,
+              1.022302
+            ],
+            "r_squared": 0.010756
+          }
+        }
+      }
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "domains": {
+        "healthcare": {
+          "exponential": {
+            "params": [
+              0.004476,
+              -3.52344,
+              0.33613
+            ],
+            "r_squared": 0.007883
+          },
+          "polynomial": {
+            "params": [
+              0.416447,
+              -0.329153,
+              0.410424
+            ],
+            "r_squared": 0.008646
+          },
+          "logistic": {
+            "params": [
+              30.000053,
+              0.322626,
+              14.077061
+            ],
+            "r_squared": 0.007235
+          }
+        },
+        "history": {
+          "exponential": {
+            "params": [
+              0.22023,
+              0.006889,
+              0.329227
+            ],
+            "r_squared": 0.0
+          },
+          "polynomial": {
+            "params": [
+              -0.164974,
+              0.227114,
+              0.483596
+            ],
+            "r_squared": 0.000235
+          },
+          "logistic": {
+            "params": [
+              1.118397,
+              -0.005785,
+              -5.981667
+            ],
+            "r_squared": 0.0
+          }
+        },
+        "technology": {
+          "exponential": {
+            "params": [
+              443.625629,
+              0.002952,
+              -442.190898
+            ],
+            "r_squared": 0.103912
+          },
+          "polynomial": {
+            "params": [
+              -43.503484,
+              78.815889,
+              -35.261023
+            ],
+            "r_squared": 0.142126
+          },
+          "logistic": {
+            "params": [
+              0.32291,
+              -58.279653,
+              0.982835
+            ],
+            "r_squared": 0.121884
+          }
+        }
+      }
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "domains": {
+        "healthcare": {
+          "exponential": {
+            "params": [
+              3.046109,
+              -0.083057,
+              -2.490656
+            ],
+            "r_squared": 0.022289
+          },
+          "polynomial": {
+            "params": [
+              0.011247,
+              0.252539,
+              0.555544
+            ],
+            "r_squared": 0.02229
+          },
+          "logistic": {
+            "params": [
+              1.31806,
+              0.809226,
+              0.400841
+            ],
+            "r_squared": 0.022302
+          }
+        },
+        "history": {
+          "exponential": {
+            "params": [
+              -20.547572,
+              0.004089,
+              21.342016
+            ],
+            "r_squared": 0.001124
+          },
+          "polynomial": {
+            "params": [
+              0.2536,
+              -0.267749,
+              0.895823
+            ],
+            "r_squared": 0.001888
+          },
+          "logistic": {
+            "params": [
+              14.371784,
+              0.106875,
+              26.561044
+            ],
+            "r_squared": 0.001149
+          }
+        },
+        "technology": {
+          "exponential": {
+            "params": [
+              224.513373,
+              0.007803,
+              -222.380348
+            ],
+            "r_squared": 0.063668
+          },
+          "polynomial": {
+            "params": [
+              -39.537431,
+              71.078141,
+              -31.221516
+            ],
+            "r_squared": 0.074574
+          },
+          "logistic": {
+            "params": [
+              0.650466,
+              -32.352143,
+              1.003651
+            ],
+            "r_squared": 0.06931
+          }
+        }
+      }
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "domains": {
+        "healthcare": {
+          "exponential": {
+            "params": [
+              -1.707396,
+              0.5364,
+              4.564111
+            ],
+            "r_squared": 0.135428
+          },
+          "polynomial": {
+            "params": [
+              -0.265326,
+              0.973698,
+              2.842074
+            ],
+            "r_squared": 0.135533
+          },
+          "logistic": {
+            "params": [
+              4.125327,
+              1.030224,
+              -0.786784
+            ],
+            "r_squared": 0.135512
+          }
+        },
+        "history": {
+          "exponential": {
+            "params": [
+              -39.083733,
+              0.009887,
+              42.600864
+            ],
+            "r_squared": 0.00613
+          },
+          "polynomial": {
+            "params": [
+              0.144689,
+              0.1833,
+              3.57563
+            ],
+            "r_squared": 0.006197
+          },
+          "logistic": {
+            "params": [
+              3.885417,
+              8.933648,
+              -3.992466
+            ],
+            "r_squared": 0.0
+          }
+        },
+        "technology": {
+          "exponential": {
+            "params": [
+              1233.505277,
+              0.002298,
+              -1227.631999
+            ],
+            "r_squared": 0.142936
+          },
+          "polynomial": {
+            "params": [
+              -125.613538,
+              228.518237,
+              -100.081466
+            ],
+            "r_squared": 0.236354
+          },
+          "logistic": {
+            "params": [
+              3.260417,
+              17.386332,
+              -6.571879
+            ],
+            "r_squared": 0.0
+          }
+        }
+      }
+    }
+  }
+}

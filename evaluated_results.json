@@ -1,0 +1,10 @@
+[
+  {
+    "query": "What is the capital of France?",
+    "ground_truth": "Paris is the capital of France.",
+    "context": "France is a country in Western Europe. Its capital is Paris.",
+    "generated_answer": "The capital of France is Paris.",
+    "human_eval_score": 5,
+    "human_eval_rationale": "To evaluate the Generated Answer, I will follow the given Chain of Thought.\n\n1. **Analyzing the Query and the Ground Truth**: The Query asks for the capital of France. The Ground Truth states that \"Paris is the capital of France.\" This means a perfect answer should identify Paris as the capital of France.\n\n2. **Reading the Provided Context**: The Provided Context states that \"France is a country in Western Europe. Its capital is Paris.\" This indicates that the context contains the necessary information to answer the query, affirming that Paris is the capital of France.\n\n3. **Evaluating the Generated Answer**: The Generated Answer is \"The capital of France is Paris.\" This directly answers the query. It is factually correct according to the Ground Truth. Moreover, the information provided in the Generated Answer is present in the Provided Context, indicating that it is grounded in the context and does not hallucinate.\n\n4. **Assigning an Overall Score**: Since the Generated Answer accurately answers the query, is factually correct according to the Ground Truth, and is fully supported by the Provided Context without any hallucination, it deserves a perfect score.\n\nFINAL_SCORE: 5"
+  }
+]

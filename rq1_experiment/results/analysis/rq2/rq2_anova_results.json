@@ -1,0 +1,1082 @@
+{
+  "descriptive_by_source_level": {
+    "Single-Source": {
+      "bertscore_f1": 0.768985,
+      "hallucination_rate": 0.51125,
+      "precision_at_5": 0.29725,
+      "ndcg_at_5": 0.607175,
+      "human_eval_score": 3.217188,
+      "rouge_l": 0.125717,
+      "meteor": 0.325572,
+      "source_diversity_index": 0.0
+    },
+    "Two-Source Mix": {
+      "bertscore_f1": 0.780601,
+      "hallucination_rate": 0.56375,
+      "precision_at_5": 0.352,
+      "ndcg_at_5": 0.678993,
+      "human_eval_score": 3.560938,
+      "rouge_l": 0.135981,
+      "meteor": 0.373417,
+      "source_diversity_index": 0.25835
+    },
+    "Full Diversity": {
+      "bertscore_f1": 0.78365,
+      "hallucination_rate": 0.54,
+      "precision_at_5": 0.39275,
+      "ndcg_at_5": 0.689445,
+      "human_eval_score": 3.520312,
+      "rouge_l": 0.140239,
+      "meteor": 0.372815,
+      "source_diversity_index": 0.421193
+    }
+  },
+  "one_way_anova": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "factor": "source_config_level",
+      "n": 2400,
+      "group_means": {
+        "Single-Source": 0.768985,
+        "Two-Source Mix": 0.780601,
+        "Full Diversity": 0.78365
+      },
+      "F": 2.552675,
+      "p_value": 0.078085,
+      "significant": false,
+      "eta_squared": 0.002125,
+      "effect_size_label": "negligible",
+      "pairwise_cohens_d": [
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "cohens_d": -0.083977,
+          "mean_diff": -0.011616
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Full Diversity",
+          "cohens_d": -0.107278,
+          "mean_diff": -0.014665
+        },
+        {
+          "group1": "Two-Source Mix",
+          "group2": "Full Diversity",
+          "cohens_d": -0.022432,
+          "mean_diff": -0.00305
+        }
+      ]
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "factor": "source_config_level",
+      "n": 2400,
+      "group_means": {
+        "Single-Source": 0.51125,
+        "Two-Source Mix": 0.56375,
+        "Full Diversity": 0.54
+      },
+      "F": 2.22609,
+      "p_value": 0.108173,
+      "significant": false,
+      "eta_squared": 0.001854,
+      "effect_size_label": "negligible",
+      "pairwise_cohens_d": [
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "cohens_d": -0.105377,
+          "mean_diff": -0.0525
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Full Diversity",
+          "cohens_d": -0.057564,
+          "mean_diff": -0.02875
+        },
+        {
+          "group1": "Two-Source Mix",
+          "group2": "Full Diversity",
+          "cohens_d": 0.047741,
+          "mean_diff": 0.02375
+        }
+      ]
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "factor": "source_config_level",
+      "n": 2400,
+      "group_means": {
+        "Single-Source": 0.29725,
+        "Two-Source Mix": 0.352,
+        "Full Diversity": 0.39275
+      },
+      "F": 18.251724,
+      "p_value": 0.0,
+      "significant": true,
+      "eta_squared": 0.015,
+      "effect_size_label": "small",
+      "pairwise_cohens_d": [
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "cohens_d": -0.178754,
+          "mean_diff": -0.05475
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Full Diversity",
+          "cohens_d": -0.299578,
+          "mean_diff": -0.0955
+        },
+        {
+          "group1": "Two-Source Mix",
+          "group2": "Full Diversity",
+          "cohens_d": -0.124851,
+          "mean_diff": -0.04075
+        }
+      ]
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "factor": "source_config_level",
+      "n": 2400,
+      "group_means": {
+        "Single-Source": 0.607175,
+        "Two-Source Mix": 0.678993,
+        "Full Diversity": 0.689445
+      },
+      "F": 8.735516,
+      "p_value": 0.000166,
+      "significant": true,
+      "eta_squared": 0.007236,
+      "effect_size_label": "negligible",
+      "pairwise_cohens_d": [
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "cohens_d": -0.164922,
+          "mean_diff": -0.071818
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Full Diversity",
+          "cohens_d": -0.191326,
+          "mean_diff": -0.08227
+        },
+        {
+          "group1": "Two-Source Mix",
+          "group2": "Full Diversity",
+          "cohens_d": -0.024874,
+          "mean_diff": -0.010452
+        }
+      ]
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "factor": "source_config_level",
+      "n": 2400,
+      "group_means": {
+        "Single-Source": 3.217187,
+        "Two-Source Mix": 3.560938,
+        "Full Diversity": 3.520312
+      },
+      "F": 30.862992,
+      "p_value": 0.0,
+      "significant": true,
+      "eta_squared": 0.025105,
+      "effect_size_label": "small",
+      "pairwise_cohens_d": [
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "cohens_d": -0.372577,
+          "mean_diff": -0.34375
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Full Diversity",
+          "cohens_d": -0.325572,
+          "mean_diff": -0.303125
+        },
+        {
+          "group1": "Two-Source Mix",
+          "group2": "Full Diversity",
+          "cohens_d": 0.040114,
+          "mean_diff": 0.040625
+        }
+      ]
+    }
+  },
+  "two_way_anova": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "n": 2400,
+      "r_squared": 0.033359,
+      "factors": {
+        "source_type": {
+          "term": "C(source_level)",
+          "F": 5.342524,
+          "p_value": 0.004841,
+          "significant": true,
+          "eta_squared": 0.00432,
+          "effect_size_label": "negligible"
+        },
+        "domain_volatility": {
+          "term": "C(volatility)",
+          "F": 3.871545,
+          "p_value": 0.020957,
+          "significant": true,
+          "eta_squared": 0.00313,
+          "effect_size_label": "negligible"
+        },
+        "interaction": {
+          "term": "C(source_level):C(volatility)",
+          "F": 2.927095,
+          "p_value": 0.019857,
+          "significant": true,
+          "eta_squared": 0.004734,
+          "effect_size_label": "negligible"
+        }
+      }
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "n": 2400,
+      "r_squared": 0.025367,
+      "factors": {
+        "source_type": {
+          "term": "C(source_level)",
+          "F": 4.818942,
+          "p_value": 0.008154,
+          "significant": true,
+          "eta_squared": 0.003929,
+          "effect_size_label": "negligible"
+        },
+        "domain_volatility": {
+          "term": "C(volatility)",
+          "F": 7.426347,
+          "p_value": 0.000609,
+          "significant": true,
+          "eta_squared": 0.006054,
+          "effect_size_label": "negligible"
+        },
+        "interaction": {
+          "term": "C(source_level):C(volatility)",
+          "F": 3.848128,
+          "p_value": 0.004028,
+          "significant": true,
+          "eta_squared": 0.006274,
+          "effect_size_label": "negligible"
+        }
+      }
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "n": 2400,
+      "r_squared": 0.203107,
+      "factors": {
+        "source_type": {
+          "term": "C(source_level)",
+          "F": 11.759418,
+          "p_value": 8e-06,
+          "significant": true,
+          "eta_squared": 0.007839,
+          "effect_size_label": "negligible"
+        },
+        "domain_volatility": {
+          "term": "C(volatility)",
+          "F": 96.836661,
+          "p_value": 0.0,
+          "significant": true,
+          "eta_squared": 0.064549,
+          "effect_size_label": "medium"
+        },
+        "interaction": {
+          "term": "C(source_level):C(volatility)",
+          "F": 12.127206,
+          "p_value": 0.0,
+          "significant": true,
+          "eta_squared": 0.016167,
+          "effect_size_label": "small"
+        }
+      }
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "n": 2400,
+      "r_squared": 0.140514,
+      "factors": {
+        "source_type": {
+          "term": "C(source_level)",
+          "F": 8.873377,
+          "p_value": 0.000145,
+          "significant": true,
+          "eta_squared": 0.006379,
+          "effect_size_label": "negligible"
+        },
+        "domain_volatility": {
+          "term": "C(volatility)",
+          "F": 65.106461,
+          "p_value": 0.0,
+          "significant": true,
+          "eta_squared": 0.046807,
+          "effect_size_label": "small"
+        },
+        "interaction": {
+          "term": "C(source_level):C(volatility)",
+          "F": 10.866985,
+          "p_value": 0.0,
+          "significant": true,
+          "eta_squared": 0.015625,
+          "effect_size_label": "small"
+        }
+      }
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "n": 2400,
+      "r_squared": 0.126039,
+      "factors": {
+        "source_type": {
+          "term": "C(source_level)",
+          "F": 39.011286,
+          "p_value": 0.0,
+          "significant": true,
+          "eta_squared": 0.028519,
+          "effect_size_label": "small"
+        },
+        "domain_volatility": {
+          "term": "C(volatility)",
+          "F": 11.770633,
+          "p_value": 8e-06,
+          "significant": true,
+          "eta_squared": 0.008605,
+          "effect_size_label": "negligible"
+        },
+        "interaction": {
+          "term": "C(source_level):C(volatility)",
+          "F": 18.681885,
+          "p_value": 0.0,
+          "significant": true,
+          "eta_squared": 0.027314,
+          "effect_size_label": "small"
+        }
+      }
+    }
+  },
+  "posthoc_tukey": {
+    "bertscore_f1": {
+      "metric": "bertscore_f1",
+      "comparisons": [
+        {
+          "group1": "Full Diversity",
+          "group2": "Single-Source",
+          "mean_diff": -0.0147,
+          "p_adjusted": 0.0819,
+          "ci_lower": -0.0307,
+          "ci_upper": 0.0014,
+          "reject_h0": false,
+          "cohens_d": 0.107278
+        },
+        {
+          "group1": "Full Diversity",
+          "group2": "Two-Source Mix",
+          "mean_diff": -0.003,
+          "p_adjusted": 0.8965,
+          "ci_lower": -0.0191,
+          "ci_upper": 0.013,
+          "reject_h0": false,
+          "cohens_d": 0.022432
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.0116,
+          "p_adjusted": 0.207,
+          "ci_lower": -0.0044,
+          "ci_upper": 0.0277,
+          "reject_h0": false,
+          "cohens_d": -0.083977
+        }
+      ]
+    },
+    "hallucination_rate": {
+      "metric": "hallucination_rate",
+      "comparisons": [
+        {
+          "group1": "Full Diversity",
+          "group2": "Single-Source",
+          "mean_diff": -0.0288,
+          "p_adjusted": 0.4811,
+          "ci_lower": -0.0872,
+          "ci_upper": 0.0297,
+          "reject_h0": false,
+          "cohens_d": 0.057564
+        },
+        {
+          "group1": "Full Diversity",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.0237,
+          "p_adjusted": 0.6067,
+          "ci_lower": -0.0347,
+          "ci_upper": 0.0822,
+          "reject_h0": false,
+          "cohens_d": -0.047741
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.0525,
+          "p_adjusted": 0.0886,
+          "ci_lower": -0.0059,
+          "ci_upper": 0.1109,
+          "reject_h0": false,
+          "cohens_d": -0.105377
+        }
+      ]
+    },
+    "precision_at_5": {
+      "metric": "precision_at_5",
+      "comparisons": [
+        {
+          "group1": "Full Diversity",
+          "group2": "Single-Source",
+          "mean_diff": -0.0955,
+          "p_adjusted": 0.0,
+          "ci_lower": -0.1327,
+          "ci_upper": -0.0583,
+          "reject_h0": true,
+          "cohens_d": 0.299578
+        },
+        {
+          "group1": "Full Diversity",
+          "group2": "Two-Source Mix",
+          "mean_diff": -0.0407,
+          "p_adjusted": 0.0277,
+          "ci_lower": -0.078,
+          "ci_upper": -0.0035,
+          "reject_h0": true,
+          "cohens_d": 0.124851
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.0548,
+          "p_adjusted": 0.0016,
+          "ci_lower": 0.0175,
+          "ci_upper": 0.092,
+          "reject_h0": true,
+          "cohens_d": -0.178754
+        }
+      ]
+    },
+    "ndcg_at_5": {
+      "metric": "ndcg_at_5",
+      "comparisons": [
+        {
+          "group1": "Full Diversity",
+          "group2": "Single-Source",
+          "mean_diff": -0.0823,
+          "p_adjusted": 0.0004,
+          "ci_lower": -0.1325,
+          "ci_upper": -0.032,
+          "reject_h0": true,
+          "cohens_d": 0.191326
+        },
+        {
+          "group1": "Full Diversity",
+          "group2": "Two-Source Mix",
+          "mean_diff": -0.0105,
+          "p_adjusted": 0.8772,
+          "ci_lower": -0.0607,
+          "ci_upper": 0.0398,
+          "reject_h0": false,
+          "cohens_d": 0.024874
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.0718,
+          "p_adjusted": 0.0024,
+          "ci_lower": 0.0216,
+          "ci_upper": 0.1221,
+          "reject_h0": true,
+          "cohens_d": -0.164922
+        }
+      ]
+    },
+    "human_eval_score": {
+      "metric": "human_eval_score",
+      "comparisons": [
+        {
+          "group1": "Full Diversity",
+          "group2": "Single-Source",
+          "mean_diff": -0.3031,
+          "p_adjusted": 0.0,
+          "ci_lower": -0.4153,
+          "ci_upper": -0.191,
+          "reject_h0": true,
+          "cohens_d": 0.325572
+        },
+        {
+          "group1": "Full Diversity",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.0406,
+          "p_adjusted": 0.6721,
+          "ci_lower": -0.0715,
+          "ci_upper": 0.1528,
+          "reject_h0": false,
+          "cohens_d": -0.040114
+        },
+        {
+          "group1": "Single-Source",
+          "group2": "Two-Source Mix",
+          "mean_diff": 0.3438,
+          "p_adjusted": 0.0,
+          "ci_lower": 0.2316,
+          "ci_upper": 0.4559,
+          "reject_h0": true,
+          "cohens_d": -0.372577
+        }
+      ]
+    }
+  },
+  "per_domain_anova": {
+    "bertscore_f1": {
+      "technology": {
+        "metric": "bertscore_f1",
+        "factor": "source_config_level",
+        "n": 1200,
+        "group_means": {
+          "Single-Source": 0.758308,
+          "Two-Source Mix": 0.762739,
+          "Full Diversity": 0.7773
+        },
+        "F": 2.138721,
+        "p_value": 0.118255,
+        "significant": false,
+        "eta_squared": 0.003561,
+        "effect_size_label": "negligible",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.032242,
+            "mean_diff": -0.004431
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.1411,
+            "mean_diff": -0.018992
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": -0.107368,
+            "mean_diff": -0.014561
+          }
+        ]
+      },
+      "healthcare": {
+        "metric": "bertscore_f1",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.768489,
+          "Two-Source Mix": 0.767261,
+          "Full Diversity": 0.751595
+        },
+        "F": 0.855267,
+        "p_value": 0.42569,
+        "significant": false,
+        "eta_squared": 0.002857,
+        "effect_size_label": "negligible",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": 0.00851,
+            "mean_diff": 0.001228
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": 0.117456,
+            "mean_diff": 0.016894
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.108801,
+            "mean_diff": 0.015666
+          }
+        ]
+      },
+      "history": {
+        "metric": "bertscore_f1",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.790834,
+          "Two-Source Mix": 0.829665,
+          "Full Diversity": 0.828407
+        },
+        "F": 6.394541,
+        "p_value": 0.001787,
+        "significant": true,
+        "eta_squared": 0.020973,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.305411,
+            "mean_diff": -0.038831
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.296064,
+            "mean_diff": -0.037573
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.010863,
+            "mean_diff": 0.001258
+          }
+        ]
+      }
+    },
+    "hallucination_rate": {
+      "technology": {
+        "metric": "hallucination_rate",
+        "factor": "source_config_level",
+        "n": 1200,
+        "group_means": {
+          "Single-Source": 0.4475,
+          "Two-Source Mix": 0.485,
+          "Full Diversity": 0.5
+        },
+        "F": 1.171732,
+        "p_value": 0.310185,
+        "significant": false,
+        "eta_squared": 0.001954,
+        "effect_size_label": "negligible",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.07513,
+            "mean_diff": -0.0375
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.105159,
+            "mean_diff": -0.0525
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": -0.029969,
+            "mean_diff": -0.015
+          }
+        ]
+      },
+      "healthcare": {
+        "metric": "hallucination_rate",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.605,
+          "Two-Source Mix": 0.605,
+          "Full Diversity": 0.485
+        },
+        "F": 3.937756,
+        "p_value": 0.02,
+        "significant": true,
+        "eta_squared": 0.01302,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": 0.0,
+            "mean_diff": 0.0
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": 0.242139,
+            "mean_diff": 0.12
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.242139,
+            "mean_diff": 0.12
+          }
+        ]
+      },
+      "history": {
+        "metric": "hallucination_rate",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.545,
+          "Two-Source Mix": 0.68,
+          "Full Diversity": 0.675
+        },
+        "F": 5.106106,
+        "p_value": 0.006327,
+        "significant": true,
+        "eta_squared": 0.016818,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.279104,
+            "mean_diff": -0.135
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.268256,
+            "mean_diff": -0.13
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.01067,
+            "mean_diff": 0.005
+          }
+        ]
+      }
+    },
+    "precision_at_5": {
+      "technology": {
+        "metric": "precision_at_5",
+        "factor": "source_config_level",
+        "n": 1200,
+        "group_means": {
+          "Single-Source": 0.1585,
+          "Two-Source Mix": 0.208,
+          "Full Diversity": 0.3175
+        },
+        "F": 37.878414,
+        "p_value": 0.0,
+        "significant": true,
+        "eta_squared": 0.059522,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.224125,
+            "mean_diff": -0.0495
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.575897,
+            "mean_diff": -0.159
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": -0.376187,
+            "mean_diff": -0.1095
+          }
+        ]
+      },
+      "healthcare": {
+        "metric": "precision_at_5",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.404,
+          "Two-Source Mix": 0.404,
+          "Full Diversity": 0.348
+        },
+        "F": 2.184608,
+        "p_value": 0.113421,
+        "significant": false,
+        "eta_squared": 0.007265,
+        "effect_size_label": "negligible",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": 0.0,
+            "mean_diff": 0.0
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": 0.180815,
+            "mean_diff": 0.056
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.180815,
+            "mean_diff": 0.056
+          }
+        ]
+      },
+      "history": {
+        "metric": "precision_at_5",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.468,
+          "Two-Source Mix": 0.588,
+          "Full Diversity": 0.588
+        },
+        "F": 10.539632,
+        "p_value": 3.2e-05,
+        "significant": true,
+        "eta_squared": 0.034104,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.392055,
+            "mean_diff": -0.12
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.392055,
+            "mean_diff": -0.12
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.0,
+            "mean_diff": 0.0
+          }
+        ]
+      }
+    },
+    "ndcg_at_5": {
+      "technology": {
+        "metric": "ndcg_at_5",
+        "factor": "source_config_level",
+        "n": 1200,
+        "group_means": {
+          "Single-Source": 0.446222,
+          "Two-Source Mix": 0.51702,
+          "Full Diversity": 0.603894
+        },
+        "F": 11.822279,
+        "p_value": 8e-06,
+        "significant": true,
+        "eta_squared": 0.019371,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.153163,
+            "mean_diff": -0.070798
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.344574,
+            "mean_diff": -0.157672
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": -0.189579,
+            "mean_diff": -0.086874
+          }
+        ]
+      },
+      "healthcare": {
+        "metric": "ndcg_at_5",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.758628,
+          "Two-Source Mix": 0.758628,
+          "Full Diversity": 0.626689
+        },
+        "F": 7.651594,
+        "p_value": 0.000523,
+        "significant": true,
+        "eta_squared": 0.024993,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": 0.0,
+            "mean_diff": 0.0
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": 0.33429,
+            "mean_diff": 0.131939
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.33429,
+            "mean_diff": 0.131939
+          }
+        ]
+      },
+      "history": {
+        "metric": "ndcg_at_5",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 0.777628,
+          "Two-Source Mix": 0.923303,
+          "Full Diversity": 0.923303
+        },
+        "F": 22.176644,
+        "p_value": 0.0,
+        "significant": true,
+        "eta_squared": 0.069156,
+        "effect_size_label": "medium",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.522259,
+            "mean_diff": -0.145675
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.522259,
+            "mean_diff": -0.145675
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.0,
+            "mean_diff": 0.0
+          }
+        ]
+      }
+    },
+    "human_eval_score": {
+      "technology": {
+        "metric": "human_eval_score",
+        "factor": "source_config_level",
+        "n": 1200,
+        "group_means": {
+          "Single-Source": 3.06875,
+          "Two-Source Mix": 3.24375,
+          "Full Diversity": 3.46875
+        },
+        "F": 17.989339,
+        "p_value": 0.0,
+        "significant": true,
+        "eta_squared": 0.02918,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.200069,
+            "mean_diff": -0.175
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.422284,
+            "mean_diff": -0.4
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": -0.222805,
+            "mean_diff": -0.225
+          }
+        ]
+      },
+      "healthcare": {
+        "metric": "human_eval_score",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 3.3,
+          "Two-Source Mix": 3.56875,
+          "Full Diversity": 3.10625
+        },
+        "F": 15.34561,
+        "p_value": 0.0,
+        "significant": true,
+        "eta_squared": 0.048895,
+        "effect_size_label": "small",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.311934,
+            "mean_diff": -0.26875
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": 0.246635,
+            "mean_diff": 0.19375
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.53412,
+            "mean_diff": 0.4625
+          }
+        ]
+      },
+      "history": {
+        "metric": "human_eval_score",
+        "factor": "source_config_level",
+        "n": 600,
+        "group_means": {
+          "Single-Source": 3.43125,
+          "Two-Source Mix": 4.1875,
+          "Full Diversity": 4.0375
+        },
+        "F": 40.270289,
+        "p_value": 0.0,
+        "significant": true,
+        "eta_squared": 0.118872,
+        "effect_size_label": "medium",
+        "pairwise_cohens_d": [
+          {
+            "group1": "Single-Source",
+            "group2": "Two-Source Mix",
+            "cohens_d": -0.848461,
+            "mean_diff": -0.75625
+          },
+          {
+            "group1": "Single-Source",
+            "group2": "Full Diversity",
+            "cohens_d": -0.680996,
+            "mean_diff": -0.60625
+          },
+          {
+            "group1": "Two-Source Mix",
+            "group2": "Full Diversity",
+            "cohens_d": 0.167521,
+            "mean_diff": 0.15
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "n_samples": 2400,
+  "metrics": {
+    "bertscore_f1": {
+      "C1": {
+        "domain": "technology",
+        "actual_mean": 0.7558,
+        "predicted_mean": 0.7573,
+        "absolute_error": 0.0015,
+        "ci_95_lower": 0.7401,
+        "ci_95_upper": 0.7774,
+        "is_boundary_condition": false
+      },
+      "C10": {
+        "domain": "history",
+        "actual_mean": 0.7908,
+        "predicted_mean": 0.7658,
+        "absolute_error": 0.0251,
+        "ci_95_lower": 0.7215,
+        "ci_95_upper": 0.7598,
+        "is_boundary_condition": false
+      },
+      "C11": {
+        "domain": "history",
+        "actual_mean": 0.8297,
+        "predicted_mean": 0.8289,
+        "absolute_error": 0.0007,
+        "ci_95_lower": 0.812,
+        "ci_95_upper": 0.8444,
+        "is_boundary_condition": false
+      },
+      "C12": {
+        "domain": "history",
+        "actual_mean": 0.8284,
+        "predicted_mean": 0.8278,
+        "absolute_error": 0.0006,
+        "ci_95_lower": 0.811,
+        "ci_95_upper": 0.8432,
+        "is_boundary_condition": false
+      },
+      "C2": {
+        "domain": "technology",
+        "actual_mean": 0.7544,
+        "predicted_mean": 0.7522,
+        "absolute_error": 0.0022,
+        "ci_95_lower": 0.7306,
+        "ci_95_upper": 0.7693,
+        "is_boundary_condition": false
+      },
+      "C3": {
+        "domain": "technology",
+        "actual_mean": 0.7538,
+        "predicted_mean": 0.7533,
+        "absolute_error": 0.0004,
+        "ci_95_lower": 0.7337,
+        "ci_95_upper": 0.7722,
+        "is_boundary_condition": false
+      },
+      "C4": {
+        "domain": "technology",
+        "actual_mean": 0.7609,
+        "predicted_mean": 0.7665,
+        "absolute_error": 0.0057,
+        "ci_95_lower": 0.7528,
+        "ci_95_upper": 0.7916,
+        "is_boundary_condition": false
+      },
+      "C5": {
+        "domain": "technology",
+        "actual_mean": 0.771,
+        "predicted_mean": 0.7543,
+        "absolute_error": 0.0167,
+        "ci_95_lower": 0.7184,
+        "ci_95_upper": 0.7568,
+        "is_boundary_condition": false
+      },
+      "C6": {
+        "domain": "technology",
+        "actual_mean": 0.8008,
+        "predicted_mean": 0.7678,
+        "absolute_error": 0.033,
+        "ci_95_lower": 0.7177,
+        "ci_95_upper": 0.752,
+        "is_boundary_condition": false
+      },
+      "C7": {
+        "domain": "healthcare",
+        "actual_mean": 0.7685,
+        "predicted_mean": 0.767,
+        "absolute_error": 0.0015,
+        "ci_95_lower": 0.7454,
+        "ci_95_upper": 0.7856,
+        "is_boundary_condition": false
+      },
+      "C8": {
+        "domain": "healthcare",
+        "actual_mean": 0.7673,
+        "predicted_mean": 0.7689,
+        "absolute_error": 0.0017,
+        "ci_95_lower": 0.7504,
+        "ci_95_upper": 0.7907,
+        "is_boundary_condition": false
+      },
+      "C9": {
+        "domain": "healthcare",
+        "actual_mean": 0.7516,
+        "predicted_mean": 0.7942,
+        "absolute_error": 0.0426,
+        "ci_95_lower": 0.8168,
+        "ci_95_upper": 0.8568,
+        "is_boundary_condition": false
+      }
+    },
+    "hallucination_rate": {
+      "C1": {
+        "domain": "technology",
+        "actual_mean": 0.405,
+        "predicted_mean": 0.4571,
+        "absolute_error": 0.0521,
+        "ci_95_lower": 0.4407,
+        "ci_95_upper": 0.5779,
+        "is_boundary_condition": false
+      },
+      "C10": {
+        "domain": "history",
+        "actual_mean": 0.545,
+        "predicted_mean": 0.614,
+        "absolute_error": 0.069,
+        "ci_95_lower": 0.6133,
+        "ci_95_upper": 0.7525,
+        "is_boundary_condition": false
+      },
+      "C11": {
+        "domain": "history",
+        "actual_mean": 0.68,
+        "predicted_mean": 0.6747,
+        "absolute_error": 0.0053,
+        "ci_95_lower": 0.6041,
+        "ci_95_upper": 0.7345,
+        "is_boundary_condition": false
+      },
+      "C12": {
+        "domain": "history",
+        "actual_mean": 0.675,
+        "predicted_mean": 0.6788,
+        "absolute_error": 0.0038,
+        "ci_95_lower": 0.6171,
+        "ci_95_upper": 0.7481,
+        "is_boundary_condition": false
+      },
+      "C2": {
+        "domain": "technology",
+        "actual_mean": 0.44,
+        "predicted_mean": 0.4272,
+        "absolute_error": 0.0128,
+        "ci_95_lower": 0.345,
+        "ci_95_upper": 0.4838,
+        "is_boundary_condition": false
+      },
+      "C3": {
+        "domain": "technology",
+        "actual_mean": 0.435,
+        "predicted_mean": 0.4411,
+        "absolute_error": 0.0061,
+        "ci_95_lower": 0.3779,
+        "ci_95_upper": 0.5166,
+        "is_boundary_condition": false
+      },
+      "C4": {
+        "domain": "technology",
+        "actual_mean": 0.49,
+        "predicted_mean": 0.5663,
+        "absolute_error": 0.0763,
+        "ci_95_lower": 0.5728,
+        "ci_95_upper": 0.7125,
+        "is_boundary_condition": false
+      },
+      "C5": {
+        "domain": "technology",
+        "actual_mean": 0.53,
+        "predicted_mean": 0.501,
+        "absolute_error": 0.029,
+        "ci_95_lower": 0.4023,
+        "ci_95_upper": 0.5418,
+        "is_boundary_condition": false
+      },
+      "C6": {
+        "domain": "technology",
+        "actual_mean": 0.565,
+        "predicted_mean": 0.5232,
+        "absolute_error": 0.0418,
+        "ci_95_lower": 0.4121,
+        "ci_95_upper": 0.5507,
+        "is_boundary_condition": false
+      },
+      "C7": {
+        "domain": "healthcare",
+        "actual_mean": 0.605,
+        "predicted_mean": 0.602,
+        "absolute_error": 0.003,
+        "ci_95_lower": 0.5307,
+        "ci_95_upper": 0.6673,
+        "is_boundary_condition": false
+      },
+      "C8": {
+        "domain": "healthcare",
+        "actual_mean": 0.605,
+        "predicted_mean": 0.6065,
+        "absolute_error": 0.0015,
+        "ci_95_lower": 0.5396,
+        "ci_95_upper": 0.6763,
+        "is_boundary_condition": false
+      },
+      "C9": {
+        "domain": "healthcare",
+        "actual_mean": 0.485,
+        "predicted_mean": 0.6249,
+        "absolute_error": 0.1399,
+        "ci_95_lower": 0.6948,
+        "ci_95_upper": 0.8346,
+        "is_boundary_condition": false
+      }
+    },
+    "precision_at_5": {
+      "C1": {
+        "domain": "technology",
+        "actual_mean": 0.111,
+        "predicted_mean": 0.1491,
+        "absolute_error": 0.0381,
+        "ci_95_lower": 0.1659,
+        "ci_95_upper": 0.2087,
+        "is_boundary_condition": false
+      },
+      "C10": {
+        "domain": "history",
+        "actual_mean": 0.468,
+        "predicted_mean": 0.3134,
+        "absolute_error": 0.1546,
+        "ci_95_lower": 0.1144,
+        "ci_95_upper": 0.2033,
+        "is_boundary_condition": false
+      },
+      "C11": {
+        "domain": "history",
+        "actual_mean": 0.588,
+        "predicted_mean": 0.5876,
+        "absolute_error": 0.0004,
+        "ci_95_lower": 0.5464,
+        "ci_95_upper": 0.6281,
+        "is_boundary_condition": false
+      },
+      "C12": {
+        "domain": "history",
+        "actual_mean": 0.588,
+        "predicted_mean": 0.589,
+        "absolute_error": 0.001,
+        "ci_95_lower": 0.5491,
+        "ci_95_upper": 0.6309,
+        "is_boundary_condition": false
+      },
+      "C2": {
+        "domain": "technology",
+        "actual_mean": 0.144,
+        "predicted_mean": 0.143,
+        "absolute_error": 0.001,
+        "ci_95_lower": 0.1163,
+        "ci_95_upper": 0.1676,
+        "is_boundary_condition": false
+      },
+      "C3": {
+        "domain": "technology",
+        "actual_mean": 0.144,
+        "predicted_mean": 0.1429,
+        "absolute_error": 0.0011,
+        "ci_95_lower": 0.1161,
+        "ci_95_upper": 0.1674,
+        "is_boundary_condition": false
+      },
+      "C4": {
+        "domain": "technology",
+        "actual_mean": 0.206,
+        "predicted_mean": 0.3559,
+        "absolute_error": 0.1499,
+        "ci_95_lower": 0.4738,
+        "ci_95_upper": 0.5378,
+        "is_boundary_condition": false
+      },
+      "C5": {
+        "domain": "technology",
+        "actual_mean": 0.272,
+        "predicted_mean": 0.2061,
+        "absolute_error": 0.0659,
+        "ci_95_lower": 0.1027,
+        "ci_95_upper": 0.1779,
+        "is_boundary_condition": false
+      },
+      "C6": {
+        "domain": "technology",
+        "actual_mean": 0.491,
+        "predicted_mean": 0.27,
+        "absolute_error": 0.221,
+        "ci_95_lower": -0.0014,
+        "ci_95_upper": 0.0994,
+        "is_boundary_condition": false
+      },
+      "C7": {
+        "domain": "healthcare",
+        "actual_mean": 0.404,
+        "predicted_mean": 0.4033,
+        "absolute_error": 0.0007,
+        "ci_95_lower": 0.3597,
+        "ci_95_upper": 0.4457,
+        "is_boundary_condition": false
+      },
+      "C8": {
+        "domain": "healthcare",
+        "actual_mean": 0.404,
+        "predicted_mean": 0.4017,
+        "absolute_error": 0.0023,
+        "ci_95_lower": 0.3564,
+        "ci_95_upper": 0.4425,
+        "is_boundary_condition": false
+      },
+      "C9": {
+        "domain": "healthcare",
+        "actual_mean": 0.348,
+        "predicted_mean": 0.4564,
+        "absolute_error": 0.1084,
+        "ci_95_lower": 0.5214,
+        "ci_95_upper": 0.6081,
+        "is_boundary_condition": false
+      }
+    },
+    "ndcg_at_5": {
+      "C1": {
+        "domain": "technology",
+        "actual_mean": 0.3475,
+        "predicted_mean": 0.4325,
+        "absolute_error": 0.085,
+        "ci_95_lower": 0.457,
+        "ci_95_upper": 0.5781,
+        "is_boundary_condition": false
+      },
+      "C10": {
+        "domain": "history",
+        "actual_mean": 0.7776,
+        "predicted_mean": 0.7674,
+        "absolute_error": 0.0102,
+        "ci_95_lower": 0.709,
+        "ci_95_upper": 0.8055,
+        "is_boundary_condition": false
+      },
+      "C11": {
+        "domain": "history",
+        "actual_mean": 0.9233,
+        "predicted_mean": 0.9241,
+        "absolute_error": 0.0008,
+        "ci_95_lower": 0.8986,
+        "ci_95_upper": 0.9514,
+        "is_boundary_condition": false
+      },
+      "C12": {
+        "domain": "history",
+        "actual_mean": 0.9233,
+        "predicted_mean": 0.9229,
+        "absolute_error": 0.0004,
+        "ci_95_lower": 0.8961,
+        "ci_95_upper": 0.9489,
+        "is_boundary_condition": false
+      },
+      "C2": {
+        "domain": "technology",
+        "actual_mean": 0.4233,
+        "predicted_mean": 0.4218,
+        "absolute_error": 0.0015,
+        "ci_95_lower": 0.3568,
+        "ci_95_upper": 0.4838,
+        "is_boundary_condition": false
+      },
+      "C3": {
+        "domain": "technology",
+        "actual_mean": 0.4233,
+        "predicted_mean": 0.4245,
+        "absolute_error": 0.0012,
+        "ci_95_lower": 0.3622,
+        "ci_95_upper": 0.4891,
+        "is_boundary_condition": false
+      },
+      "C4": {
+        "domain": "technology",
+        "actual_mean": 0.545,
+        "predicted_mean": 0.7452,
+        "absolute_error": 0.2002,
+        "ci_95_lower": 0.8801,
+        "ci_95_upper": 1.0107,
+        "is_boundary_condition": false
+      },
+      "C5": {
+        "domain": "technology",
+        "actual_mean": 0.6108,
+        "predicted_mean": 0.5683,
+        "absolute_error": 0.0424,
+        "ci_95_lower": 0.4628,
+        "ci_95_upper": 0.589,
+        "is_boundary_condition": false
+      },
+      "C6": {
+        "domain": "technology",
+        "actual_mean": 0.7845,
+        "predicted_mean": 0.6102,
+        "absolute_error": 0.1743,
+        "ci_95_lower": 0.3837,
+        "ci_95_upper": 0.4879,
+        "is_boundary_condition": false
+      },
+      "C7": {
+        "domain": "healthcare",
+        "actual_mean": 0.7586,
+        "predicted_mean": 0.7581,
+        "absolute_error": 0.0005,
+        "ci_95_lower": 0.7048,
+        "ci_95_upper": 0.8105,
+        "is_boundary_condition": false
+      },
+      "C8": {
+        "domain": "healthcare",
+        "actual_mean": 0.7586,
+        "predicted_mean": 0.7606,
+        "absolute_error": 0.002,
+        "ci_95_lower": 0.7098,
+        "ci_95_upper": 0.8154,
+        "is_boundary_condition": false
+      },
+      "C9": {
+        "domain": "healthcare",
+        "actual_mean": 0.6267,
+        "predicted_mean": 0.7956,
+        "absolute_error": 0.1689,
+        "ci_95_lower": 0.9074,
+        "ci_95_upper": 1.0217,
+        "is_boundary_condition": false
+      }
+    },
+    "human_eval_score": {
+      "C1": {
+        "domain": "technology",
+        "actual_mean": 3.025,
+        "predicted_mean": 3.0602,
+        "absolute_error": 0.0352,
+        "ci_95_lower": 2.9847,
+        "ci_95_upper": 3.2062,
+        "is_boundary_condition": false
+      },
+      "C10": {
+        "domain": "history",
+        "actual_mean": 3.4312,
+        "predicted_mean": 3.2236,
+        "absolute_error": 0.2077,
+        "ci_95_lower": 2.8924,
+        "ci_95_upper": 3.1395,
+        "is_boundary_condition": false
+      },
+      "C11": {
+        "domain": "history",
+        "actual_mean": 4.1875,
+        "predicted_mean": 4.0398,
+        "absolute_error": 0.1477,
+        "ci_95_lower": 3.767,
+        "ci_95_upper": 4.017,
+        "is_boundary_condition": false
+      },
+      "C12": {
+        "domain": "history",
+        "actual_mean": 4.0375,
+        "predicted_mean": 4.1937,
+        "absolute_error": 0.1562,
+        "ci_95_lower": 4.2251,
+        "ci_95_upper": 4.4745,
+        "is_boundary_condition": false
+      },
+      "C2": {
+        "domain": "technology",
+        "actual_mean": 3.0125,
+        "predicted_mean": 3.1044,
+        "absolute_error": 0.0919,
+        "ci_95_lower": 3.109,
+        "ci_95_upper": 3.2834,
+        "is_boundary_condition": false
+      },
+      "C3": {
+        "domain": "technology",
+        "actual_mean": 3.1,
+        "predicted_mean": 3.0189,
+        "absolute_error": 0.0811,
+        "ci_95_lower": 2.8171,
+        "ci_95_upper": 3.0586,
+        "is_boundary_condition": false
+      },
+      "C4": {
+        "domain": "technology",
+        "actual_mean": 3.1125,
+        "predicted_mean": 3.4433,
+        "absolute_error": 0.3308,
+        "ci_95_lower": 3.6613,
+        "ci_95_upper": 3.8868,
+        "is_boundary_condition": true
+      },
+      "C5": {
+        "domain": "technology",
+        "actual_mean": 3.475,
+        "predicted_mean": 3.1003,
+        "absolute_error": 0.3747,
+        "ci_95_lower": 2.5678,
+        "ci_95_upper": 2.8835,
+        "is_boundary_condition": true
+      },
+      "C6": {
+        "domain": "technology",
+        "actual_mean": 3.8375,
+        "predicted_mean": 3.3753,
+        "absolute_error": 0.4622,
+        "ci_95_lower": 2.755,
+        "ci_95_upper": 3.0713,
+        "is_boundary_condition": true
+      },
+      "C7": {
+        "domain": "healthcare",
+        "actual_mean": 3.3,
+        "predicted_mean": 3.5765,
+        "absolute_error": 0.2765,
+        "ci_95_lower": 3.7441,
+        "ci_95_upper": 3.9619,
+        "is_boundary_condition": true
+      },
+      "C8": {
+        "domain": "healthcare",
+        "actual_mean": 3.5688,
+        "predicted_mean": 3.2973,
+        "absolute_error": 0.2714,
+        "ci_95_lower": 2.8955,
+        "ci_95_upper": 3.1564,
+        "is_boundary_condition": true
+      },
+      "C9": {
+        "domain": "healthcare",
+        "actual_mean": 3.1063,
+        "predicted_mean": 3.7032,
+        "absolute_error": 0.5969,
+        "ci_95_lower": 4.1899,
+        "ci_95_upper": 4.4103,
+        "is_boundary_condition": true
+      }
+    }
+  },
+  "boundary_condition_count_by_domain": {
+    "technology": 3,
+    "healthcare": 3,
+    "history": 0
+  }
+}

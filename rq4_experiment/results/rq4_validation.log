@@ -1,0 +1,48 @@
+2026-05-29 15:01:13,392 [INFO] rq4_experiment.run_rq4 — === Phase 4: Framework Validation & Benchmarking (RQ4) ===
+2026-05-29 15:01:13,392 [INFO] rq4_experiment.run_rq4 — --- Step 1: Leave-One-Condition-Out (LOCO) Cross-Validation ---
+2026-05-29 15:01:13,400 [INFO] rq3_experiment.data — Loaded query-level dataset: 2285 rows
+2026-05-29 15:01:13,401 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for bertscore_f1...
+2026-05-29 15:01:15,125 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for hallucination_rate...
+2026-05-29 15:01:16,795 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for precision_at_5...
+2026-05-29 15:01:18,451 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for ndcg_at_5...
+2026-05-29 15:01:20,106 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for human_eval_score...
+2026-05-29 15:01:21,746 [INFO] rq4_experiment.run_rq4 — Saved numerical validation results -> F:\rs2\rq4_experiment\results\rq4_validation.json
+2026-05-29 15:01:21,746 [INFO] rq4_experiment.run_rq4 — 
+--- Step 2: Boundary Condition Analysis ---
+2026-05-29 15:01:21,746 [INFO] rq4_experiment.run_rq4 — Total Boundary Conditions Identified: 5
+2026-05-29 15:01:21,746 [INFO] rq4_experiment.run_rq4 —   Technology: 3
+2026-05-29 15:01:21,746 [INFO] rq4_experiment.run_rq4 —   Healthcare: 2
+2026-05-29 15:01:21,746 [INFO] rq4_experiment.run_rq4 —   History: 0
+2026-05-29 15:01:21,747 [WARNING] rq4_experiment.run_rq4 — The framework struggles with certain configurations (check JSON for details).
+2026-05-29 15:01:21,747 [INFO] rq4_experiment.run_rq4 — 
+--- Step 3: Generating Validation Plots ---
+2026-05-29 15:01:22,970 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_bertscore_f1.png
+2026-05-29 15:01:23,388 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_hallucination_rate.png
+2026-05-29 15:01:23,807 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_precision_at_5.png
+2026-05-29 15:01:24,216 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_ndcg_at_5.png
+2026-05-29 15:01:24,624 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_human_eval_score.png
+2026-05-29 15:01:24,625 [INFO] rq4_experiment.run_rq4 — Phase 4 validation complete.
+2026-06-04 20:49:38,181 [INFO] rq4_experiment.run_rq4 — === Phase 4: Framework Validation & Benchmarking (RQ4) ===
+2026-06-04 20:49:38,195 [INFO] rq4_experiment.run_rq4 — --- Step 1: Leave-One-Condition-Out (LOCO) Cross-Validation ---
+2026-06-04 20:49:38,204 [INFO] rq3_experiment.data — Loaded query-level dataset: 2400 rows
+2026-06-04 20:49:38,204 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for bertscore_f1...
+2026-06-04 20:49:39,843 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for hallucination_rate...
+2026-06-04 20:49:41,465 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for precision_at_5...
+2026-06-04 20:49:43,077 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for ndcg_at_5...
+2026-06-04 20:49:44,689 [INFO] rq4_experiment.validation.loco_validator —   Running LOCO Validation for human_eval_score...
+2026-06-04 20:49:46,290 [INFO] rq4_experiment.run_rq4 — Saved numerical validation results -> F:\rs2\rq4_experiment\results\rq4_validation.json
+2026-06-04 20:49:46,291 [INFO] rq4_experiment.run_rq4 — 
+--- Step 2: Boundary Condition Analysis ---
+2026-06-04 20:49:46,291 [INFO] rq4_experiment.run_rq4 — Total Boundary Conditions Identified: 6
+2026-06-04 20:49:46,291 [INFO] rq4_experiment.run_rq4 —   Technology: 3
+2026-06-04 20:49:46,291 [INFO] rq4_experiment.run_rq4 —   Healthcare: 3
+2026-06-04 20:49:46,291 [INFO] rq4_experiment.run_rq4 —   History: 0
+2026-06-04 20:49:46,292 [WARNING] rq4_experiment.run_rq4 — The framework struggles with certain configurations (check JSON for details).
+2026-06-04 20:49:46,292 [INFO] rq4_experiment.run_rq4 — 
+--- Step 3: Generating Validation Plots ---
+2026-06-04 20:49:47,522 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_bertscore_f1.png
+2026-06-04 20:49:47,932 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_hallucination_rate.png
+2026-06-04 20:49:48,311 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_precision_at_5.png
+2026-06-04 20:49:48,699 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_ndcg_at_5.png
+2026-06-04 20:49:49,052 [INFO] rq4_experiment.validation.visualizer_rq4 — Saved plot -> F:\rs2\rq4_experiment\results\plots\rq4_loco_validation_human_eval_score.png
+2026-06-04 20:49:49,053 [INFO] rq4_experiment.run_rq4 — Phase 4 validation complete.

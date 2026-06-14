@@ -1,0 +1,74 @@
+{
+  "C1": {
+    "domain": "technology",
+    "volatility": "high",
+    "freshness": "<= 1 week",
+    "source_config": "Academic only"
+  },
+  "C2": {
+    "domain": "technology",
+    "volatility": "high",
+    "freshness": "<= 1 week",
+    "source_config": "Academic + News"
+  },
+  "C3": {
+    "domain": "technology",
+    "volatility": "high",
+    "freshness": "<= 1 week",
+    "source_config": "Academic + News + Tech"
+  },
+  "C4": {
+    "domain": "technology",
+    "volatility": "high",
+    "freshness": "1 wk - 1 mo",
+    "source_config": "Academic only"
+  },
+  "C5": {
+    "domain": "technology",
+    "volatility": "high",
+    "freshness": "1 wk - 1 mo",
+    "source_config": "Academic + News"
+  },
+  "C6": {
+    "domain": "technology",
+    "volatility": "high",
+    "freshness": "1 wk - 1 mo",
+    "source_config": "Academic + News + Tech"
+  },
+  "C7": {
+    "domain": "healthcare",
+    "volatility": "medium",
+    "freshness": "1-6 months",
+    "source_config": "Academic only"
+  },
+  "C8": {
+    "domain": "healthcare",
+    "volatility": "medium",
+    "freshness": "1-6 months",
+    "source_config": "Academic + News"
+  },
+  "C9": {
+    "domain": "healthcare",
+    "volatility": "medium",
+    "freshness": "6-12 months",
+    "source_config": "Academic + News + Tech"
+  },
+  "C10": {
+    "domain": "history",
+    "volatility": "low",
+    "freshness": ">= 6 mo (adj.)",
+    "source_config": "Academic only"
+  },
+  "C11": {
+    "domain": "history",
+    "volatility": "low",
+    "freshness": ">= 6 mo (adj.)",
+    "source_config": "Academic + Archival"
+  },
+  "C12": {
+    "domain": "history",
+    "volatility": "low",
+    "freshness": ">= 6 mo (adj.)",
+    "source_config": "Academic + Archival + Reference"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "condition_id": "C3",
+  "n_records": 200,
+  "retrieval": {
+    "precision_at_5": {
+      "mean": 0.144,
+      "std": 0.183938,
+      "n": 200
+    },
+    "ndcg_at_5": {
+      "mean": 0.423289,
+      "std": 0.455336,
+      "n": 200
+    }
+  },
+  "bertscore_f1": {
+    "mean": 0.75376,
+    "std": 0.138159,
+    "n": 200
+  },
+  "hallucination": {
+    "mean": 0.435,
+    "std": 0.497001,
+    "n": 200
+  },
+  "rouge_l": {
+    "mean": 0.118449,
+    "std": 0.093228,
+    "n": 200
+  },
+  "meteor": {
+    "mean": 0.215394,
+    "std": 0.25807,
+    "n": 200
+  },
+  "source_attribution": {
+    "mean": 0.058,
+    "std": 0.207972,
+    "n": 200
+  },
+  "processing_latency_ms": {
+    "mean": 4517.5441,
+    "std": 8923.208502,
+    "n": 200
+  },
+  "human_eval_score": {
+    "mean": 3.1,
+    "std": 0.865655,
+    "n": 40
+  },
+  "human_eval_relevance": {
+    "mean": 2.5,
+    "std": 1.1094,
+    "n": 40
+  },
+  "human_eval_correctness": {
+    "mean": 2.5,
+    "std": 1.1094,
+    "n": 40
+  },
+  "human_eval_freshness": {
+    "mean": 3.35,
+    "std": 0.769615,
+    "n": 40
+  },
+  "human_eval_hallucination": {
+    "mean": 4.1,
+    "std": 1.549193,
+    "n": 40
+  },
+  "human_eval_kappa": {
+    "relevance": 1.0,
+    "correctness": 1.0,
+    "freshness": 1.0,
+    "hallucination": 0.909639,
+    "mean": 0.97741,
+    "verifier_a_mean": 1.0,
+    "verifier_b_mean": 0.954128,
+    "raw_rater_ab_mean": 0.954128,
+    "adjudicated_n": 160
+  },
+  "human_eval_kappa_threshold_met": true,
+  "human_eval_counts": {
+    "relevance": 40,
+    "correctness": 40,
+    "freshness": 40,
+    "hallucination": 40,
+    "adjudicated_pairs": 160,
+    "min_count": 40
+  },
+  "freshness_score": {
+    "mean": 0.987235,
+    "std": 0.002827,
+    "n": 200
+  },
+  "source_diversity_index": {
+    "mean": 0.198039,
+    "std": 0.353451,
+    "n": 200
+  }
+}

@@ -1,0 +1,174 @@
+2026-05-29 14:54:57,568 [INFO] rq2_experiment.run_rq2 — === Step 1: Source-Type ANOVA (one-way, two-way, Tukey HSD) ===
+2026-05-29 14:54:58,603 [INFO] rq2_experiment.analysis.source_type_anova — Running RQ2 source-type ANOVA on 12 conditions …
+2026-05-29 14:54:58,613 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for bertscore_f1 …
+2026-05-29 14:55:00,026 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for hallucination_rate …
+2026-05-29 14:55:00,514 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for precision_at_5 …
+2026-05-29 14:55:00,994 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for ndcg_at_5 …
+2026-05-29 14:55:01,472 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for human_eval_score …
+2026-05-29 14:55:01,961 [INFO] rq2_experiment.analysis.source_type_anova — RQ2 ANOVA results saved → F:\rs2\rq1_experiment\results\analysis\rq2\rq2_anova_results.json
+2026-05-29 14:55:01,961 [INFO] rq2_experiment.run_rq2 — 
+=================================================================
+2026-05-29 14:55:01,961 [INFO] rq2_experiment.run_rq2 —   RQ2 — SOURCE TYPE ANOVA SUMMARY
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 — =================================================================
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] bertscore_f1           F=  1.6097  p= 0.20018  eta2=0.0014 (negligible)  not sig.
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] bertscore_f1   p= 0.00000  eta2=0.0299  [INTERACTION SIG]
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] hallucination_rate     F=  1.8638  p= 0.15531  eta2=0.0016 (negligible)  not sig.
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] hallucination_rate p= 0.00000  eta2=0.0133  [INTERACTION SIG]
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] precision_at_5         F= 22.1097  p= 0.00000  eta2=0.0190 (small)  [SIG]
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] precision_at_5 p= 0.00000  eta2=0.0151  [INTERACTION SIG]
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] ndcg_at_5              F=  9.0750  p= 0.00012  eta2=0.0079 (negligible)  [SIG]
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] ndcg_at_5      p= 0.00000  eta2=0.0189  [INTERACTION SIG]
+2026-05-29 14:55:01,962 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] human_eval_score       F= 20.1397  p= 0.00000  eta2=0.0173 (small)  [SIG]
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] human_eval_score p= 0.00000  eta2=0.0266  [INTERACTION SIG]
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 — 
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 —   Group means by source level:
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 —     Single-Source                   P@5=0.2898  nDCG=0.6036  Hall=0.5175  BERTs=0.1263
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 —     Two-Source Mix                  P@5=0.3520  nDCG=0.6790  Hall=0.5637  BERTs=0.1360
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 —     Full Diversity                  P@5=0.3905  nDCG=0.6689  Hall=0.4982  BERTs=0.1174
+2026-05-29 14:55:01,963 [INFO] rq2_experiment.run_rq2 — === Step 2: Source Contribution Analysis (marginal gains + SDI regression) ===
+2026-05-29 14:55:01,979 [INFO] rq2_experiment.analysis.source_contribution — Running RQ2 source contribution analysis on 12 conditions …
+2026-05-29 14:55:02,051 [INFO] rq2_experiment.analysis.source_contribution — RQ2 contribution results saved → F:\rs2\rq1_experiment\results\analysis\rq2\rq2_contribution_results.json
+2026-05-29 14:55:02,051 [INFO] rq2_experiment.run_rq2 — 
+=================================================================
+2026-05-29 14:55:02,051 [INFO] rq2_experiment.run_rq2 —   RQ2 — SOURCE CONTRIBUTION SUMMARY
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 — =================================================================
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 — 
+  NDCG_AT_5:
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0571  +Tech=+0.0869  dominant=adding_tech
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0000  +Tech=-0.2143  dominant=adding_tech
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.1873  +Tech=+0.0000  dominant=adding_news
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 — 
+  PRECISION_AT_5:
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0445  +Tech=+0.1095  dominant=adding_tech
+2026-05-29 14:55:02,052 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0000  +Tech=-0.0652  dominant=adding_tech
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.1600  +Tech=+0.0000  dominant=adding_news
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 — 
+  HALLUCINATION_RATE:
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0250  +Tech=+0.0150  dominant=adding_news
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0000  +Tech=-0.2874  dominant=adding_tech
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.1350  +Tech=-0.0050  dominant=adding_news
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 — 
+  BERTSCORE_F1:
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0050  +Tech=+0.0125  dominant=adding_tech
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0013  +Tech=-0.0989  dominant=adding_tech
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.0274  +Tech=-0.0005  dominant=adding_news
+2026-05-29 14:55:02,053 [INFO] rq2_experiment.run_rq2 — 
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 —   SDI Regression (moderated by volatility):
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 —     bertscore_f1            interaction_coef=-0.0561  p=0.39864   
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 —     hallucination_rate      interaction_coef=-0.1588  p=0.38352   
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 —     precision_at_5          interaction_coef=+0.0933  p=0.64323   
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 —     ndcg_at_5               interaction_coef=+0.0208  p=0.93699   
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 —     human_eval_score        interaction_coef=-0.1639  p=0.76015   
+2026-05-29 14:55:02,054 [INFO] rq2_experiment.run_rq2 — === Step 3: Generating all RQ2 plots ===
+2026-05-29 14:55:02,365 [INFO] rq2_experiment.analysis.visualizer_rq2 — Generating RQ2 plots …
+2026-05-29 14:55:02,625 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_bertscore_f1.png
+2026-05-29 14:55:02,742 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_hallucination_rate.png
+2026-05-29 14:55:02,854 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_precision_at_5.png
+2026-05-29 14:55:02,952 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_ndcg_at_5.png
+2026-05-29 14:55:03,073 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_human_eval_score.png
+2026-05-29 14:55:03,202 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_bertscore_f1.png
+2026-05-29 14:55:03,323 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_hallucination_rate.png
+2026-05-29 14:55:03,438 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_precision_at_5.png
+2026-05-29 14:55:03,571 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_ndcg_at_5.png
+2026-05-29 14:55:03,701 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_human_eval_score.png
+2026-05-29 14:55:03,902 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_bertscore_f1.png
+2026-05-29 14:55:04,119 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_hallucination_rate.png
+2026-05-29 14:55:04,305 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_precision_at_5.png
+2026-05-29 14:55:04,498 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_ndcg_at_5.png
+2026-05-29 14:55:04,684 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_human_eval_score.png
+2026-05-29 14:55:04,821 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_bertscore_f1.png
+2026-05-29 14:55:04,953 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_hallucination_rate.png
+2026-05-29 14:55:05,100 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_precision_at_5.png
+2026-05-29 14:55:05,227 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_ndcg_at_5.png
+2026-05-29 14:55:05,355 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_human_eval_score.png
+2026-05-29 14:55:05,488 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_performance_radar.png
+2026-05-29 14:55:05,738 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_effect_sizes.png
+2026-05-29 14:55:05,738 [INFO] rq2_experiment.analysis.visualizer_rq2 — All RQ2 plots saved to F:\rs2\rq1_experiment\results\plots\rq2
+2026-05-29 14:55:05,738 [INFO] rq2_experiment.run_rq2 — RQ2 analysis complete.
+2026-06-04 20:47:34,894 [INFO] rq2_experiment.run_rq2 — === Step 1: Source-Type ANOVA (one-way, two-way, Tukey HSD) ===
+2026-06-04 20:47:35,949 [INFO] rq2_experiment.analysis.source_type_anova — Running RQ2 source-type ANOVA on 12 conditions …
+2026-06-04 20:47:35,957 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for bertscore_f1 …
+2026-06-04 20:47:37,417 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for hallucination_rate …
+2026-06-04 20:47:37,891 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for precision_at_5 …
+2026-06-04 20:47:38,376 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for ndcg_at_5 …
+2026-06-04 20:47:38,867 [INFO] rq2_experiment.analysis.source_type_anova —   ANOVA for human_eval_score …
+2026-06-04 20:47:39,375 [INFO] rq2_experiment.analysis.source_type_anova — RQ2 ANOVA results saved → F:\rs2\rq1_experiment\results\analysis\rq2\rq2_anova_results.json
+2026-06-04 20:47:39,375 [INFO] rq2_experiment.run_rq2 — 
+=================================================================
+2026-06-04 20:47:39,375 [INFO] rq2_experiment.run_rq2 —   RQ2 — SOURCE TYPE ANOVA SUMMARY
+2026-06-04 20:47:39,375 [INFO] rq2_experiment.run_rq2 — =================================================================
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] bertscore_f1           F=  2.5527  p= 0.07809  eta2=0.0021 (negligible)  not sig.
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] bertscore_f1   p= 0.01986  eta2=0.0047  [INTERACTION SIG]
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] hallucination_rate     F=  2.2261  p= 0.10817  eta2=0.0019 (negligible)  not sig.
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] hallucination_rate p= 0.00403  eta2=0.0063  [INTERACTION SIG]
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] precision_at_5         F= 18.2517  p= 0.00000  eta2=0.0150 (small)  [SIG]
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] precision_at_5 p= 0.00000  eta2=0.0162  [INTERACTION SIG]
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] ndcg_at_5              F=  8.7355  p= 0.00017  eta2=0.0072 (negligible)  [SIG]
+2026-06-04 20:47:39,376 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] ndcg_at_5      p= 0.00000  eta2=0.0156  [INTERACTION SIG]
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 —   [ONE-WAY] human_eval_score       F= 30.8630  p= 0.00000  eta2=0.0251 (small)  [SIG]
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 —   [TWO-WAY interaction] human_eval_score p= 0.00000  eta2=0.0273  [INTERACTION SIG]
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 — 
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 —   Group means by source level:
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 —     Single-Source                   P@5=0.2973  nDCG=0.6072  Hall=0.5112  BERTs=0.7690
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 —     Two-Source Mix                  P@5=0.3520  nDCG=0.6790  Hall=0.5637  BERTs=0.7806
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 —     Full Diversity                  P@5=0.3927  nDCG=0.6894  Hall=0.5400  BERTs=0.7836
+2026-06-04 20:47:39,377 [INFO] rq2_experiment.run_rq2 — === Step 2: Source Contribution Analysis (marginal gains + SDI regression) ===
+2026-06-04 20:47:39,402 [INFO] rq2_experiment.analysis.source_contribution — Running RQ2 source contribution analysis on 12 conditions …
+2026-06-04 20:47:39,476 [INFO] rq2_experiment.analysis.source_contribution — RQ2 contribution results saved → F:\rs2\rq1_experiment\results\analysis\rq2\rq2_contribution_results.json
+2026-06-04 20:47:39,477 [INFO] rq2_experiment.run_rq2 — 
+=================================================================
+2026-06-04 20:47:39,477 [INFO] rq2_experiment.run_rq2 —   RQ2 — SOURCE CONTRIBUTION SUMMARY
+2026-06-04 20:47:39,477 [INFO] rq2_experiment.run_rq2 — =================================================================
+2026-06-04 20:47:39,477 [INFO] rq2_experiment.run_rq2 — 
+  NDCG_AT_5:
+2026-06-04 20:47:39,477 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0708  +Tech=+0.0869  dominant=adding_tech
+2026-06-04 20:47:39,477 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0000  +Tech=-0.1319  dominant=adding_tech
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.1457  +Tech=+0.0000  dominant=adding_news
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 — 
+  PRECISION_AT_5:
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0495  +Tech=+0.1095  dominant=adding_tech
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0000  +Tech=-0.0560  dominant=adding_tech
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.1200  +Tech=+0.0000  dominant=adding_news
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 — 
+  HALLUCINATION_RATE:
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0375  +Tech=+0.0150  dominant=adding_news
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=+0.0000  +Tech=-0.1200  dominant=adding_tech
+2026-06-04 20:47:39,478 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.1350  +Tech=-0.0050  dominant=adding_news
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 — 
+  BERTSCORE_F1:
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —     technology    +News=+0.0044  +Tech=+0.0146  dominant=adding_tech
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —     healthcare    +News=-0.0012  +Tech=-0.0157  dominant=adding_tech
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —     history       +News=+0.0388  +Tech=-0.0013  dominant=adding_news
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 — 
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —   SDI Regression (moderated by volatility):
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —     bertscore_f1            interaction_coef=-0.0211  p=0.58438   
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —     hallucination_rate      interaction_coef=-0.0388  p=0.76082   
+2026-06-04 20:47:39,479 [INFO] rq2_experiment.run_rq2 —     precision_at_5          interaction_coef=+0.1613  p=0.40845   
+2026-06-04 20:47:39,480 [INFO] rq2_experiment.run_rq2 —     ndcg_at_5               interaction_coef=+0.1424  p=0.55734   
+2026-06-04 20:47:39,480 [INFO] rq2_experiment.run_rq2 —     human_eval_score        interaction_coef=-0.1472  p=0.80575   
+2026-06-04 20:47:39,480 [INFO] rq2_experiment.run_rq2 — === Step 3: Generating all RQ2 plots ===
+2026-06-04 20:47:40,933 [INFO] rq2_experiment.analysis.visualizer_rq2 — Generating RQ2 plots …
+2026-06-04 20:47:41,216 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_bertscore_f1.png
+2026-06-04 20:47:41,340 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_hallucination_rate.png
+2026-06-04 20:47:41,452 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_precision_at_5.png
+2026-06-04 20:47:41,551 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_ndcg_at_5.png
+2026-06-04 20:47:41,669 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_source_comparison_human_eval_score.png
+2026-06-04 20:47:41,803 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_bertscore_f1.png
+2026-06-04 20:47:41,918 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_hallucination_rate.png
+2026-06-04 20:47:42,037 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_precision_at_5.png
+2026-06-04 20:47:42,149 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_ndcg_at_5.png
+2026-06-04 20:47:42,274 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_marginal_gain_human_eval_score.png
+2026-06-04 20:47:42,484 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_bertscore_f1.png
+2026-06-04 20:47:42,666 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_hallucination_rate.png
+2026-06-04 20:47:42,841 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_precision_at_5.png
+2026-06-04 20:47:43,017 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_ndcg_at_5.png
+2026-06-04 20:47:43,201 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_sdi_scatter_human_eval_score.png
+2026-06-04 20:47:43,332 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_bertscore_f1.png
+2026-06-04 20:47:43,452 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_hallucination_rate.png
+2026-06-04 20:47:43,588 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_precision_at_5.png
+2026-06-04 20:47:43,709 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_ndcg_at_5.png
+2026-06-04 20:47:43,831 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_interaction_heatmap_human_eval_score.png
+2026-06-04 20:47:43,972 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_performance_radar.png
+2026-06-04 20:47:44,197 [INFO] rq2_experiment.analysis.visualizer_rq2 — Saved plot → F:\rs2\rq1_experiment\results\plots\rq2\rq2_effect_sizes.png
+2026-06-04 20:47:44,197 [INFO] rq2_experiment.analysis.visualizer_rq2 — All RQ2 plots saved to F:\rs2\rq1_experiment\results\plots\rq2
+2026-06-04 20:47:44,198 [INFO] rq2_experiment.run_rq2 — RQ2 analysis complete.

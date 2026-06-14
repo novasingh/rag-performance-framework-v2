@@ -1,0 +1,456 @@
+2026-05-29 15:00:05,334 [INFO] rq3_experiment.run_rq3 — === Phase 3: Training Predictive Framework ===
+2026-05-29 15:00:05,341 [INFO] rq3_experiment.data — Loaded query-level dataset: 2285 rows
+2026-05-29 15:00:05,342 [INFO] rq3_experiment.run_rq3 — --- Step 1: OLS Regression (Cross-Validated) ---
+2026-05-29 15:00:05,342 [INFO] rq3_experiment.models.ols_regression —   Training OLS for bertscore_f1...
+2026-05-29 15:00:05,356 [INFO] rq3_experiment.models.ols_regression —   Training OLS for hallucination_rate...
+2026-05-29 15:00:05,368 [INFO] rq3_experiment.models.ols_regression —   Training OLS for precision_at_5...
+2026-05-29 15:00:05,380 [INFO] rq3_experiment.models.ols_regression —   Training OLS for ndcg_at_5...
+2026-05-29 15:00:05,405 [INFO] rq3_experiment.models.ols_regression —   Training OLS for human_eval_score...
+2026-05-29 15:00:05,417 [INFO] rq3_experiment.run_rq3 — --- Step 2: Random Forest (Cross-Validated) ---
+2026-05-29 15:00:05,417 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for bertscore_f1...
+2026-05-29 15:00:19,921 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for hallucination_rate...
+2026-05-29 15:00:31,025 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for precision_at_5...
+2026-05-29 15:00:42,339 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for ndcg_at_5...
+2026-05-29 15:00:53,477 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for human_eval_score...
+2026-05-29 15:01:04,479 [INFO] rq3_experiment.run_rq3 — --- Step 3: Decay Curve Fitting ---
+2026-05-29 15:01:04,694 [INFO] rq3_experiment.run_rq3 — RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-05-29 15:01:04,694 [INFO] rq3_experiment.run_rq3 — --- Step 4: Testing Framework API ---
+2026-05-29 15:01:04,703 [INFO] rq3_experiment.run_rq3 — 
+Framework API Test (Technology, 14 days, high diversity):
+2026-05-29 15:01:04,703 [INFO] rq3_experiment.run_rq3 —   bertscore_f1        : 0.1409 (MAE ±0.0836) | Bound: [0.0573, 0.2246]
+2026-05-29 15:01:04,704 [INFO] rq3_experiment.run_rq3 —   hallucination_rate  : 0.5171 (MAE ±0.3890) | Bound: [0.1281, 0.9061]
+2026-05-29 15:01:04,704 [INFO] rq3_experiment.run_rq3 —   precision_at_5      : 0.3257 (MAE ±0.2185) | Bound: [0.1072, 0.5442]
+2026-05-29 15:01:04,704 [INFO] rq3_experiment.run_rq3 —   ndcg_at_5           : 0.6165 (MAE ±0.3064) | Bound: [0.3100, 0.9229]
+2026-05-29 15:01:04,704 [INFO] rq3_experiment.run_rq3 —   human_eval_score    : 3.4792 (MAE ±0.6674) | Bound: [2.8118, 1.0000]
+2026-05-29 15:01:04,704 [INFO] rq3_experiment.run_rq3 — Phase 3 pipeline complete.
+2026-06-04 20:48:28,182 [INFO] rq3_experiment.run_rq3 — === Phase 3: Training Predictive Framework ===
+2026-06-04 20:48:28,190 [INFO] rq3_experiment.data — Loaded query-level dataset: 2400 rows
+2026-06-04 20:48:28,191 [INFO] rq3_experiment.run_rq3 — --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-04 20:48:28,191 [INFO] rq3_experiment.models.ols_regression —   Training OLS for bertscore_f1...
+2026-06-04 20:48:28,205 [INFO] rq3_experiment.models.ols_regression —   Training OLS for hallucination_rate...
+2026-06-04 20:48:28,216 [INFO] rq3_experiment.models.ols_regression —   Training OLS for precision_at_5...
+2026-06-04 20:48:28,227 [INFO] rq3_experiment.models.ols_regression —   Training OLS for ndcg_at_5...
+2026-06-04 20:48:28,238 [INFO] rq3_experiment.models.ols_regression —   Training OLS for human_eval_score...
+2026-06-04 20:48:28,250 [INFO] rq3_experiment.run_rq3 — --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-04 20:48:28,250 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for bertscore_f1...
+2026-06-04 20:48:41,753 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for hallucination_rate...
+2026-06-04 20:48:52,740 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for precision_at_5...
+2026-06-04 20:49:04,333 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for ndcg_at_5...
+2026-06-04 20:49:15,864 [INFO] rq3_experiment.models.random_forest —   Training Random Forest for human_eval_score...
+2026-06-04 20:49:26,722 [INFO] rq3_experiment.run_rq3 — --- Step 3: Decay Curve Fitting ---
+2026-06-04 20:49:26,914 [INFO] rq3_experiment.run_rq3 — RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-04 20:49:26,914 [INFO] rq3_experiment.run_rq3 — --- Step 4: Testing Framework API ---
+2026-06-04 20:49:26,930 [INFO] rq3_experiment.run_rq3 — 
+Framework API Test (Technology, 14 days, high diversity):
+2026-06-04 20:49:26,930 [INFO] rq3_experiment.run_rq3 —   bertscore_f1        : 0.7773 (MAE ±0.1071) | Bound: [0.6703, 0.8844]
+2026-06-04 20:49:26,930 [INFO] rq3_experiment.run_rq3 —   hallucination_rate  : 0.5175 (MAE ±0.3941) | Bound: [0.1233, 0.9116]
+2026-06-04 20:49:26,931 [INFO] rq3_experiment.run_rq3 —   precision_at_5      : 0.3255 (MAE ±0.2178) | Bound: [0.1078, 0.5433]
+2026-06-04 20:49:26,931 [INFO] rq3_experiment.run_rq3 —   ndcg_at_5           : 0.6175 (MAE ±0.3037) | Bound: [0.3138, 0.9212]
+2026-06-04 20:49:26,931 [INFO] rq3_experiment.run_rq3 —   human_eval_score    : 3.5226 (MAE ±0.7092) | Bound: [2.8134, 1.0000]
+2026-06-04 20:49:26,931 [INFO] rq3_experiment.run_rq3 — Phase 3 pipeline complete.
+2026-06-05 07:42:00,586 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 07:42:00,615 [INFO] rq3_experiment.data -- Loaded query-level dataset: 2400 rows with 16 features
+2026-06-05 07:42:00,616 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 07:42:00,616 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 07:42:00,643 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 07:42:00,725 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 07:42:00,752 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 07:42:00,770 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 07:42:00,787 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 07:42:00,787 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 07:42:16,699 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 07:42:31,153 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 07:42:45,994 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 07:43:01,323 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 07:43:16,898 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 07:43:16,899 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 07:43:17,259 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 07:43:17,260 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 07:43:17,260 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 07:43:17,260 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 07:43:17,260 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 07:43:17,261 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1071   0.1071   0.0000   <- best
+2026-06-05 07:43:17,261 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.3983   0.3983   0.0000   <- best
+2026-06-05 07:43:17,261 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2126   0.2127   0.0000   <- best
+2026-06-05 07:43:17,261 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3006   0.3009   0.0000   <- best
+2026-06-05 07:43:17,262 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.7031   0.7036   0.0000   <- best
+2026-06-05 07:43:17,262 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 07:43:17,303 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 07:43:17,303 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.0000 [0.0000, 0.1071] (MAE +/-0.1071)
+2026-06-05 07:43:17,304 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 1.0000 [0.6017, 1.0000] (MAE +/-0.3983)
+2026-06-05 07:43:17,304 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 1.0000 [0.7874, 1.0000] (MAE +/-0.2126)
+2026-06-05 07:43:17,304 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.0000 [0.0000, 0.3006] (MAE +/-0.3006)
+2026-06-05 07:43:17,304 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : -53075746186.8966 [0.0000, -53075746186.1935] (MAE +/-0.7031)
+2026-06-05 07:43:17,304 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 07:43:17,305 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.0000 [0.0000, 0.1071] (MAE +/-0.1071)
+2026-06-05 07:43:17,305 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 1.0000 [0.6017, 1.0000] (MAE +/-0.3983)
+2026-06-05 07:43:17,305 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 1.0000 [0.7874, 1.0000] (MAE +/-0.2126)
+2026-06-05 07:43:17,305 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.0000 [0.0000, 0.3006] (MAE +/-0.3006)
+2026-06-05 07:43:17,306 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : -60475901493.8791 [0.0000, -60475901493.1760] (MAE +/-0.7031)
+2026-06-05 07:43:17,306 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 07:43:17,306 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.0000 [0.0000, 0.1071] (MAE +/-0.1071)
+2026-06-05 07:43:17,306 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 1.0000 [0.6017, 1.0000] (MAE +/-0.3983)
+2026-06-05 07:43:17,306 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 1.0000 [0.7874, 1.0000] (MAE +/-0.2126)
+2026-06-05 07:43:17,307 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.0000 [0.0000, 0.3006] (MAE +/-0.3006)
+2026-06-05 07:43:17,307 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : -77096153731.3144 [0.0000, -77096153730.6113] (MAE +/-0.7031)
+2026-06-05 07:43:17,307 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.
+2026-06-05 07:47:05,556 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 07:47:05,571 [INFO] rq3_experiment.data -- Loaded query-level dataset: 2400 rows with 16 features
+2026-06-05 07:47:05,572 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 07:47:05,572 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 07:47:05,600 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 07:47:05,627 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 07:47:05,649 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 07:47:05,674 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 07:47:05,698 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 07:47:05,698 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 07:47:25,000 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 07:47:41,659 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 07:47:58,170 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 07:48:15,466 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 07:48:32,496 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 07:48:32,497 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for bertscore_f1...
+2026-06-05 07:48:35,560 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for hallucination_rate...
+2026-06-05 07:48:37,359 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for precision_at_5...
+2026-06-05 07:48:38,673 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for ndcg_at_5...
+2026-06-05 07:48:40,019 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for human_eval_score...
+2026-06-05 07:48:41,305 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 07:48:41,652 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 07:48:41,652 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 07:48:41,652 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 07:48:41,653 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 07:48:41,653 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 07:48:41,653 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1075   <- best 0.1075   0.1079  
+2026-06-05 07:48:41,653 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.3953   0.3946   <- best 0.3955  
+2026-06-05 07:48:41,653 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2185   0.2147   <- best 0.2173  
+2026-06-05 07:48:41,654 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3012   0.3004   <- best 0.3079  
+2026-06-05 07:48:41,654 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.6993   0.6932   <- best 0.7046  
+2026-06-05 07:48:41,654 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 07:48:41,686 [INFO] rq3_experiment.framework.predictor -- Detected OLS model with base 6 features
+2026-06-05 07:48:41,687 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 07:48:41,687 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7773 [0.6699, 0.8848] (MAE +/-0.1075)
+2026-06-05 07:48:41,687 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5175 [0.1222, 0.9127] (MAE +/-0.3953)
+2026-06-05 07:48:41,687 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.3255 [0.1070, 0.5441] (MAE +/-0.2185)
+2026-06-05 07:48:41,688 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.6175 [0.3162, 0.9187] (MAE +/-0.3012)
+2026-06-05 07:48:41,688 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.5226 [2.8234, 4.2219] (MAE +/-0.6993)
+2026-06-05 07:48:41,688 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 07:48:41,688 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7794 [0.6720, 0.8869] (MAE +/-0.1075)
+2026-06-05 07:48:41,688 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5824 [0.1872, 0.9777] (MAE +/-0.3953)
+2026-06-05 07:48:41,688 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.4189 [0.2004, 0.6374] (MAE +/-0.2185)
+2026-06-05 07:48:41,689 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.7460 [0.4448, 1.0000] (MAE +/-0.3012)
+2026-06-05 07:48:41,689 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.5347 [2.8354, 4.2339] (MAE +/-0.6993)
+2026-06-05 07:48:41,689 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 07:48:41,689 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.6485 [0.5410, 0.7559] (MAE +/-0.1075)
+2026-06-05 07:48:41,689 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.6983 [0.3031, 1.0000] (MAE +/-0.3953)
+2026-06-05 07:48:41,690 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2365 [0.0180, 0.4550] (MAE +/-0.2185)
+2026-06-05 07:48:41,690 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.5616 [0.2604, 0.8629] (MAE +/-0.3012)
+2026-06-05 07:48:41,690 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 2.5895 [1.8902, 3.2887] (MAE +/-0.6993)
+2026-06-05 07:48:41,690 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.
+2026-06-05 07:51:22,266 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 07:51:22,282 [INFO] rq3_experiment.data -- Loaded query-level dataset: 2400 rows with 16 features
+2026-06-05 07:51:22,283 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 07:51:22,283 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 07:51:22,310 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 07:51:22,333 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 07:51:22,356 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 07:51:22,380 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 07:51:22,402 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 07:51:22,403 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 07:51:41,901 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 07:51:56,952 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 07:52:13,117 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 07:52:29,680 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 07:52:45,482 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 07:52:45,482 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for bertscore_f1...
+2026-06-05 07:52:48,911 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for hallucination_rate...
+2026-06-05 07:52:50,441 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for precision_at_5...
+2026-06-05 07:52:51,756 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for ndcg_at_5...
+2026-06-05 07:52:53,159 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for human_eval_score...
+2026-06-05 07:52:54,427 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 07:52:54,733 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 07:52:54,733 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 07:52:54,733 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 07:52:54,734 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 07:52:54,734 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 07:52:54,734 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1068   0.1067   <- best 0.1071  
+2026-06-05 07:52:54,734 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.3909   <- best 0.3915   0.3931  
+2026-06-05 07:52:54,735 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2193   0.2158   <- best 0.2171  
+2026-06-05 07:52:54,735 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3035   0.3029   <- best 0.3098  
+2026-06-05 07:52:54,735 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.7126   0.7073   <- best 0.7173  
+2026-06-05 07:52:54,735 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 07:52:54,759 [INFO] rq3_experiment.framework.predictor -- Detected OLS model with base 6 features
+2026-06-05 07:52:54,759 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 07:52:54,759 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7773 [0.6706, 0.8841] (MAE +/-0.1068)
+2026-06-05 07:52:54,760 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5175 [0.1266, 0.9084] (MAE +/-0.3909)
+2026-06-05 07:52:54,760 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.3255 [0.1062, 0.5449] (MAE +/-0.2193)
+2026-06-05 07:52:54,760 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.6175 [0.3140, 0.9209] (MAE +/-0.3035)
+2026-06-05 07:52:54,760 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.5226 [2.8100, 4.2352] (MAE +/-0.7126)
+2026-06-05 07:52:54,760 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 07:52:54,760 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7794 [0.6727, 0.8862] (MAE +/-0.1068)
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5824 [0.1916, 0.9733] (MAE +/-0.3909)
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.4189 [0.1996, 0.6382] (MAE +/-0.2193)
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.7460 [0.4426, 1.0000] (MAE +/-0.3035)
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.5347 [2.8221, 4.2473] (MAE +/-0.7126)
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.6485 [0.5417, 0.7552] (MAE +/-0.1068)
+2026-06-05 07:52:54,761 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.6983 [0.3075, 1.0000] (MAE +/-0.3909)
+2026-06-05 07:52:54,762 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2365 [0.0172, 0.4558] (MAE +/-0.2193)
+2026-06-05 07:52:54,762 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.5616 [0.2582, 0.8651] (MAE +/-0.3035)
+2026-06-05 07:52:54,762 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 2.5895 [1.8769, 3.3020] (MAE +/-0.7126)
+2026-06-05 07:52:54,762 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.
+2026-06-05 08:48:13,522 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 08:48:13,544 [INFO] rq3_experiment.data --   C1: 200 queries with per-query features loaded
+2026-06-05 08:48:13,563 [INFO] rq3_experiment.data --   C2: 200 queries with per-query features loaded
+2026-06-05 08:48:13,581 [INFO] rq3_experiment.data --   C3: 200 queries with per-query features loaded
+2026-06-05 08:48:13,595 [INFO] rq3_experiment.data --   C4: 200 queries with per-query features loaded
+2026-06-05 08:48:13,617 [INFO] rq3_experiment.data --   C5: 200 queries with per-query features loaded
+2026-06-05 08:48:13,662 [INFO] rq3_experiment.data --   C6: 200 queries with per-query features loaded
+2026-06-05 08:48:13,678 [INFO] rq3_experiment.data --   C7: 200 queries with per-query features loaded
+2026-06-05 08:48:13,695 [INFO] rq3_experiment.data --   C8: 200 queries with per-query features loaded
+2026-06-05 08:48:13,764 [INFO] rq3_experiment.data --   C9: 200 queries with per-query features loaded
+2026-06-05 08:48:13,875 [INFO] rq3_experiment.data --   C10: 200 queries with per-query features loaded
+2026-06-05 08:48:13,992 [INFO] rq3_experiment.data --   C11: 200 queries with per-query features loaded
+2026-06-05 08:48:14,114 [INFO] rq3_experiment.data --   C12: 200 queries with per-query features loaded
+2026-06-05 08:48:14,134 [INFO] rq3_experiment.data -- Loaded dataset: 2400 rows, 20 features (4 per-query retrieval features added)
+2026-06-05 08:48:14,135 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 08:48:14,135 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 08:48:14,151 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 08:48:14,164 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 08:48:14,178 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 08:48:14,192 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 08:48:14,205 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 08:48:14,210 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 08:48:37,014 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 08:48:57,130 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 08:49:15,534 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 08:49:34,257 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 08:49:53,484 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 08:49:53,485 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for bertscore_f1...
+2026-06-05 08:49:55,702 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for hallucination_rate...
+2026-06-05 08:49:56,966 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for precision_at_5...
+2026-06-05 08:49:58,214 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for ndcg_at_5...
+2026-06-05 08:49:59,380 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for human_eval_score...
+2026-06-05 08:50:00,608 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 08:50:00,852 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 08:50:00,852 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1072   <- best 0.1102   0.1128  
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.3923   <- best 0.4016   0.4101  
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2167   <- best 0.2230   0.2284  
+2026-06-05 08:50:00,853 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3012   <- best 0.3147   0.3250  
+2026-06-05 08:50:00,854 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.7055   <- best 0.7208   0.7378  
+2026-06-05 08:50:00,854 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 08:50:00,870 [INFO] rq3_experiment.framework.predictor -- Detected OLS model with base 6 features
+2026-06-05 08:50:00,870 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 08:50:00,870 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7773 [0.6701, 0.8846] (MAE +/-0.1072)
+2026-06-05 08:50:00,870 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5175 [0.1252, 0.9098] (MAE +/-0.3923)
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.3255 [0.1089, 0.5422] (MAE +/-0.2167)
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.6175 [0.3163, 0.9187] (MAE +/-0.3012)
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.5226 [2.8171, 4.2281] (MAE +/-0.7055)
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7794 [0.6722, 0.8867] (MAE +/-0.1072)
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5824 [0.1901, 0.9748] (MAE +/-0.3923)
+2026-06-05 08:50:00,871 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.4189 [0.2022, 0.6356] (MAE +/-0.2167)
+2026-06-05 08:50:00,872 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.7460 [0.4448, 1.0000] (MAE +/-0.3012)
+2026-06-05 08:50:00,872 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.5347 [2.8292, 4.2402] (MAE +/-0.7055)
+2026-06-05 08:50:00,872 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 08:50:00,872 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.6485 [0.5412, 0.7557] (MAE +/-0.1072)
+2026-06-05 08:50:00,873 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.6983 [0.3060, 1.0000] (MAE +/-0.3923)
+2026-06-05 08:50:00,873 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2365 [0.0198, 0.4531] (MAE +/-0.2167)
+2026-06-05 08:50:00,873 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.5616 [0.2604, 0.8628] (MAE +/-0.3012)
+2026-06-05 08:50:00,873 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 2.5895 [1.8840, 3.2950] (MAE +/-0.7055)
+2026-06-05 08:50:00,873 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.
+2026-06-05 09:25:19,286 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 09:25:19,325 [INFO] rq3_experiment.data --   C1: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,364 [INFO] rq3_experiment.data --   C2: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,403 [INFO] rq3_experiment.data --   C3: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,436 [INFO] rq3_experiment.data --   C4: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,484 [INFO] rq3_experiment.data --   C5: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,581 [INFO] rq3_experiment.data --   C6: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,616 [INFO] rq3_experiment.data --   C7: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,648 [INFO] rq3_experiment.data --   C8: 200 queries (hallucination: REAL)
+2026-06-05 09:25:19,805 [INFO] rq3_experiment.data --   C9: 200 queries (hallucination: REAL)
+2026-06-05 09:25:20,148 [INFO] rq3_experiment.data --   C10: 200 queries (hallucination: REAL)
+2026-06-05 09:25:20,521 [INFO] rq3_experiment.data --   C11: 200 queries (hallucination: REAL)
+2026-06-05 09:25:20,893 [INFO] rq3_experiment.data --   C12: 200 queries (hallucination: REAL)
+2026-06-05 09:25:20,901 [INFO] rq3_experiment.data -- Loaded dataset: 2400 rows, 20 features
+2026-06-05 09:25:20,909 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 09:25:20,910 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 09:25:20,925 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 09:25:20,942 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 09:25:20,956 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 09:25:20,971 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 09:25:20,986 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 09:25:20,986 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 09:25:49,121 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 09:26:10,314 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 09:26:34,033 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 09:26:58,076 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 09:27:22,376 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 09:27:22,377 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for bertscore_f1...
+2026-06-05 09:27:24,848 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for hallucination_rate...
+2026-06-05 09:27:26,413 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for precision_at_5...
+2026-06-05 09:27:27,939 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for ndcg_at_5...
+2026-06-05 09:27:29,359 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for human_eval_score...
+2026-06-05 09:27:30,893 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1073   <- best 0.1111   0.1138  
+2026-06-05 09:27:31,292 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.4837   0.2335   <- best 0.3262  
+2026-06-05 09:27:31,293 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2237   <- best 0.2267   0.2333  
+2026-06-05 09:27:31,293 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3098   <- best 0.3145   0.3313  
+2026-06-05 09:27:31,293 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.7240   <- best 0.7301   0.7599  
+2026-06-05 09:27:31,293 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 09:27:31,305 [INFO] rq3_experiment.framework.predictor -- Detected OLS model with base 6 features
+2026-06-05 09:27:31,305 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 09:27:31,305 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7678 [0.6605, 0.8751] (MAE +/-0.1073)
+2026-06-05 09:27:31,305 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.4532 [0.0000, 0.9368] (MAE +/-0.4837)
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2256 [0.0018, 0.4493] (MAE +/-0.2237)
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.5167 [0.2069, 0.8265] (MAE +/-0.3098)
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.2875 [2.5636, 4.0115] (MAE +/-0.7240)
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7794 [0.6721, 0.8867] (MAE +/-0.1073)
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5493 [0.0657, 1.0000] (MAE +/-0.4837)
+2026-06-05 09:27:31,306 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.3887 [0.1650, 0.6125] (MAE +/-0.2237)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.7035 [0.3936, 1.0000] (MAE +/-0.3098)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.4753 [2.7513, 4.1993] (MAE +/-0.7240)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7126 [0.6053, 0.8199] (MAE +/-0.1073)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.4268 [0.0000, 0.9104] (MAE +/-0.4837)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2988 [0.0751, 0.5226] (MAE +/-0.2237)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.4221 [0.1123, 0.7319] (MAE +/-0.3098)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 2.9274 [2.2034, 3.6514] (MAE +/-0.7240)
+2026-06-05 09:27:31,307 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.
+2026-06-05 10:29:59,663 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 10:29:59,690 [INFO] rq3_experiment.data --   C1: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,724 [INFO] rq3_experiment.data --   C2: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,766 [INFO] rq3_experiment.data --   C3: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,797 [INFO] rq3_experiment.data --   C4: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,843 [INFO] rq3_experiment.data --   C5: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,926 [INFO] rq3_experiment.data --   C6: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,960 [INFO] rq3_experiment.data --   C7: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:29:59,992 [INFO] rq3_experiment.data --   C8: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:30:00,147 [INFO] rq3_experiment.data --   C9: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:30:00,452 [INFO] rq3_experiment.data --   C10: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:30:00,767 [INFO] rq3_experiment.data --   C11: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:30:01,089 [INFO] rq3_experiment.data --   C12: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:30:01,097 [INFO] rq3_experiment.data -- Loaded dataset: 2400 rows, 20 features
+2026-06-05 10:30:01,102 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 10:30:01,102 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 10:30:01,118 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 10:30:01,131 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 10:30:01,145 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 10:30:01,159 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 10:30:01,173 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 10:30:01,173 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 10:30:27,611 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 10:30:47,916 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 10:31:10,925 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 10:31:34,169 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 10:31:56,977 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 10:31:56,978 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for bertscore_f1...
+2026-06-05 10:31:59,281 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for hallucination_rate...
+2026-06-05 10:32:00,612 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for precision_at_5...
+2026-06-05 10:32:01,900 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for ndcg_at_5...
+2026-06-05 10:32:03,150 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for human_eval_score...
+2026-06-05 10:32:04,385 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 10:32:04,729 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 10:32:04,729 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 10:32:04,729 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 10:32:04,729 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 10:32:04,729 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 10:32:04,730 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1186   0.0473   <- best 0.0646  
+2026-06-05 10:32:04,730 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.4837   0.2335   <- best 0.3262  
+2026-06-05 10:32:04,730 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2235   <- best 0.2247   0.2330  
+2026-06-05 10:32:04,730 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3119   <- best 0.3161   0.3393  
+2026-06-05 10:32:04,730 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.3021   0.2456   <- best 0.3061  
+2026-06-05 10:32:04,730 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 10:32:04,746 [INFO] rq3_experiment.framework.predictor -- Detected OLS model with base 6 features
+2026-06-05 10:32:04,747 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 10:32:04,747 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7650 [0.6463, 0.8836] (MAE +/-0.1186)
+2026-06-05 10:32:04,747 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.4532 [0.0000, 0.9368] (MAE +/-0.4837)
+2026-06-05 10:32:04,747 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2333 [0.0098, 0.4568] (MAE +/-0.2235)
+2026-06-05 10:32:04,747 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.5171 [0.2052, 0.8290] (MAE +/-0.3119)
+2026-06-05 10:32:04,747 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.2669 [2.9647, 3.5690] (MAE +/-0.3021)
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7818 [0.6632, 0.9004] (MAE +/-0.1186)
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5493 [0.0657, 1.0000] (MAE +/-0.4837)
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.3864 [0.1629, 0.6099] (MAE +/-0.2235)
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.7030 [0.3911, 1.0000] (MAE +/-0.3119)
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.4648 [3.1627, 3.7670] (MAE +/-0.3021)
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 10:32:04,748 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7986 [0.6800, 0.9173] (MAE +/-0.1186)
+2026-06-05 10:32:04,749 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.4268 [0.0000, 0.9104] (MAE +/-0.4837)
+2026-06-05 10:32:04,749 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.1849 [0.0000, 0.4084] (MAE +/-0.2235)
+2026-06-05 10:32:04,749 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.3946 [0.0827, 0.7064] (MAE +/-0.3119)
+2026-06-05 10:32:04,749 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 2.6549 [2.3528, 2.9570] (MAE +/-0.3021)
+2026-06-05 10:32:04,749 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.
+2026-06-05 10:46:32,276 [INFO] rq3_experiment.run_rq3 -- === Phase 3: Training Predictive Framework (IMPROVED) ===
+2026-06-05 10:46:32,296 [INFO] rq3_experiment.data --   C1: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,335 [INFO] rq3_experiment.data --   C2: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,370 [INFO] rq3_experiment.data --   C3: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,392 [INFO] rq3_experiment.data --   C4: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,437 [INFO] rq3_experiment.data --   C5: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,518 [INFO] rq3_experiment.data --   C6: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,544 [INFO] rq3_experiment.data --   C7: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,567 [INFO] rq3_experiment.data --   C8: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:32,707 [INFO] rq3_experiment.data --   C9: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:33,022 [INFO] rq3_experiment.data --   C10: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:33,375 [INFO] rq3_experiment.data --   C11: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:33,717 [INFO] rq3_experiment.data --   C12: 200 queries (REAL: hallucination, BERTScore, human_eval)
+2026-06-05 10:46:33,725 [INFO] rq3_experiment.data -- Loaded dataset: 2400 rows, 24 features
+2026-06-05 10:46:33,735 [INFO] rq3_experiment.run_rq3 -- --- Step 1: OLS Regression (Cross-Validated) ---
+2026-06-05 10:46:33,735 [INFO] rq3_experiment.models.ols_regression --   Training OLS for bertscore_f1...
+2026-06-05 10:46:33,750 [INFO] rq3_experiment.models.ols_regression --   Training OLS for hallucination_rate...
+2026-06-05 10:46:33,764 [INFO] rq3_experiment.models.ols_regression --   Training OLS for precision_at_5...
+2026-06-05 10:46:33,778 [INFO] rq3_experiment.models.ols_regression --   Training OLS for ndcg_at_5...
+2026-06-05 10:46:33,792 [INFO] rq3_experiment.models.ols_regression --   Training OLS for human_eval_score...
+2026-06-05 10:46:33,805 [INFO] rq3_experiment.run_rq3 -- --- Step 2: Random Forest (Cross-Validated) ---
+2026-06-05 10:46:33,806 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for bertscore_f1...
+2026-06-05 10:47:00,617 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for hallucination_rate...
+2026-06-05 10:47:21,692 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for precision_at_5...
+2026-06-05 10:47:44,696 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for ndcg_at_5...
+2026-06-05 10:48:07,819 [INFO] rq3_experiment.models.random_forest --   Training Random Forest for human_eval_score...
+2026-06-05 10:48:36,972 [INFO] rq3_experiment.run_rq3 -- --- Step 3: XGBoost (Cross-Validated) ---
+2026-06-05 10:48:36,972 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for bertscore_f1...
+2026-06-05 10:48:40,382 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for hallucination_rate...
+2026-06-05 10:48:41,895 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for precision_at_5...
+2026-06-05 10:48:43,398 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for ndcg_at_5...
+2026-06-05 10:48:44,815 [INFO] rq3_experiment.models.xgboost_model --   Training XGBoost for human_eval_score...
+2026-06-05 10:48:46,144 [INFO] rq3_experiment.run_rq3 -- --- Step 4: Decay Curve Fitting ---
+2026-06-05 10:48:46,502 [INFO] rq3_experiment.run_rq3 -- RQ3 models saved -> F:\rs2\rq3_experiment\results\rq3_models.json
+2026-06-05 10:48:46,505 [INFO] rq3_experiment.run_rq3 -- --- Step 5: Model Comparison Summary ---
+2026-06-05 10:48:46,505 [INFO] rq3_experiment.run_rq3 -- Model Comparison (MAE, lower is better):
+2026-06-05 10:48:46,505 [INFO] rq3_experiment.run_rq3 --   Metric                 OLS (MAE)       RF (MAE)        XGB (MAE)
+2026-06-05 10:48:46,505 [INFO] rq3_experiment.run_rq3 --   ----------------------------------------------------------------------
+2026-06-05 10:48:46,506 [INFO] rq3_experiment.run_rq3 --   bertscore_f1           0.1186   0.0473   <- best 0.0646  
+2026-06-05 10:48:46,506 [INFO] rq3_experiment.run_rq3 --   hallucination_rate     0.4837   0.2335   <- best 0.3262  
+2026-06-05 10:48:46,506 [INFO] rq3_experiment.run_rq3 --   precision_at_5         0.2224   <- best 0.2254   0.2315  
+2026-06-05 10:48:46,506 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5              0.3100   <- best 0.3119   0.3292  
+2026-06-05 10:48:46,506 [INFO] rq3_experiment.run_rq3 --   human_eval_score       0.3021   0.2452   <- best 0.3061  
+2026-06-05 10:48:46,507 [INFO] rq3_experiment.run_rq3 -- --- Step 6: Testing Framework API ---
+2026-06-05 10:48:46,519 [INFO] rq3_experiment.framework.predictor -- Detected OLS model with base 6 features
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 -- Test: Recent Tech, High Diversity
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7650 [0.6463, 0.8836] (MAE +/-0.1186)
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.4532 [0.0000, 0.9368] (MAE +/-0.4837)
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2310 [0.0086, 0.4533] (MAE +/-0.2224)
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.5146 [0.2046, 0.8247] (MAE +/-0.3100)
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.2669 [2.9647, 3.5690] (MAE +/-0.3021)
+2026-06-05 10:48:46,520 [INFO] rq3_experiment.run_rq3 -- Test: Mid Healthcare, Mid Diversity
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7818 [0.6632, 0.9004] (MAE +/-0.1186)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.5493 [0.0657, 1.0000] (MAE +/-0.4837)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.3871 [0.1647, 0.6095] (MAE +/-0.2224)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.7030 [0.3930, 1.0000] (MAE +/-0.3100)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 3.4648 [3.1627, 3.7670] (MAE +/-0.3021)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 -- Test: Old History, Low Diversity
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   bertscore_f1        : 0.7986 [0.6800, 0.9173] (MAE +/-0.1186)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   hallucination_rate  : 0.4268 [0.0000, 0.9104] (MAE +/-0.4837)
+2026-06-05 10:48:46,521 [INFO] rq3_experiment.run_rq3 --   precision_at_5      : 0.2149 [0.0000, 0.4373] (MAE +/-0.2224)
+2026-06-05 10:48:46,522 [INFO] rq3_experiment.run_rq3 --   ndcg_at_5           : 0.4253 [0.1153, 0.7354] (MAE +/-0.3100)
+2026-06-05 10:48:46,522 [INFO] rq3_experiment.run_rq3 --   human_eval_score    : 2.6549 [2.3528, 2.9570] (MAE +/-0.3021)
+2026-06-05 10:48:46,522 [INFO] rq3_experiment.run_rq3 -- Phase 3 pipeline complete.

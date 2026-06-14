@@ -1,0 +1,433 @@
+{
+  "marginal_gains": {
+    "bertscore_f1": {
+      "technology": {
+        "mean_academic_only": 0.758308,
+        "mean_academic_plus_news": 0.762738,
+        "mean_full_diversity": 0.7773,
+        "step_a_gain_adding_news": 0.004431,
+        "step_b_gain_adding_tech": 0.014561,
+        "total_gain_l1_to_l3": 0.018992,
+        "step_a_pct_of_total": 23.33,
+        "step_b_pct_of_total": 76.67,
+        "dominant_step": "adding_tech"
+      },
+      "healthcare": {
+        "mean_academic_only": 0.768489,
+        "mean_academic_plus_news": 0.767261,
+        "mean_full_diversity": 0.751595,
+        "step_a_gain_adding_news": -0.001228,
+        "step_b_gain_adding_tech": -0.015666,
+        "total_gain_l1_to_l3": -0.016894,
+        "step_a_pct_of_total": 7.27,
+        "step_b_pct_of_total": 92.73,
+        "dominant_step": "adding_tech"
+      },
+      "history": {
+        "mean_academic_only": 0.790834,
+        "mean_academic_plus_news": 0.829665,
+        "mean_full_diversity": 0.828407,
+        "step_a_gain_adding_news": 0.038831,
+        "step_b_gain_adding_tech": -0.001258,
+        "total_gain_l1_to_l3": 0.037573,
+        "step_a_pct_of_total": 103.35,
+        "step_b_pct_of_total": -3.35,
+        "dominant_step": "adding_news"
+      }
+    },
+    "hallucination_rate": {
+      "technology": {
+        "mean_academic_only": 0.4475,
+        "mean_academic_plus_news": 0.485,
+        "mean_full_diversity": 0.5,
+        "step_a_gain_adding_news": 0.0375,
+        "step_b_gain_adding_tech": 0.015,
+        "total_gain_l1_to_l3": 0.0525,
+        "step_a_pct_of_total": 71.43,
+        "step_b_pct_of_total": 28.57,
+        "dominant_step": "adding_news"
+      },
+      "healthcare": {
+        "mean_academic_only": 0.605,
+        "mean_academic_plus_news": 0.605,
+        "mean_full_diversity": 0.485,
+        "step_a_gain_adding_news": 0.0,
+        "step_b_gain_adding_tech": -0.12,
+        "total_gain_l1_to_l3": -0.12,
+        "step_a_pct_of_total": -0.0,
+        "step_b_pct_of_total": 100.0,
+        "dominant_step": "adding_tech"
+      },
+      "history": {
+        "mean_academic_only": 0.545,
+        "mean_academic_plus_news": 0.68,
+        "mean_full_diversity": 0.675,
+        "step_a_gain_adding_news": 0.135,
+        "step_b_gain_adding_tech": -0.005,
+        "total_gain_l1_to_l3": 0.13,
+        "step_a_pct_of_total": 103.85,
+        "step_b_pct_of_total": -3.85,
+        "dominant_step": "adding_news"
+      }
+    },
+    "precision_at_5": {
+      "technology": {
+        "mean_academic_only": 0.1585,
+        "mean_academic_plus_news": 0.208,
+        "mean_full_diversity": 0.3175,
+        "step_a_gain_adding_news": 0.0495,
+        "step_b_gain_adding_tech": 0.1095,
+        "total_gain_l1_to_l3": 0.159,
+        "step_a_pct_of_total": 31.13,
+        "step_b_pct_of_total": 68.87,
+        "dominant_step": "adding_tech"
+      },
+      "healthcare": {
+        "mean_academic_only": 0.404,
+        "mean_academic_plus_news": 0.404,
+        "mean_full_diversity": 0.348,
+        "step_a_gain_adding_news": 0.0,
+        "step_b_gain_adding_tech": -0.056,
+        "total_gain_l1_to_l3": -0.056,
+        "step_a_pct_of_total": -0.0,
+        "step_b_pct_of_total": 100.0,
+        "dominant_step": "adding_tech"
+      },
+      "history": {
+        "mean_academic_only": 0.468,
+        "mean_academic_plus_news": 0.588,
+        "mean_full_diversity": 0.588,
+        "step_a_gain_adding_news": 0.12,
+        "step_b_gain_adding_tech": 0.0,
+        "total_gain_l1_to_l3": 0.12,
+        "step_a_pct_of_total": 100.0,
+        "step_b_pct_of_total": 0.0,
+        "dominant_step": "adding_news"
+      }
+    },
+    "ndcg_at_5": {
+      "technology": {
+        "mean_academic_only": 0.446222,
+        "mean_academic_plus_news": 0.51702,
+        "mean_full_diversity": 0.603894,
+        "step_a_gain_adding_news": 0.070798,
+        "step_b_gain_adding_tech": 0.086874,
+        "total_gain_l1_to_l3": 0.157672,
+        "step_a_pct_of_total": 44.9,
+        "step_b_pct_of_total": 55.1,
+        "dominant_step": "adding_tech"
+      },
+      "healthcare": {
+        "mean_academic_only": 0.758628,
+        "mean_academic_plus_news": 0.758628,
+        "mean_full_diversity": 0.626689,
+        "step_a_gain_adding_news": 0.0,
+        "step_b_gain_adding_tech": -0.131939,
+        "total_gain_l1_to_l3": -0.131939,
+        "step_a_pct_of_total": -0.0,
+        "step_b_pct_of_total": 100.0,
+        "dominant_step": "adding_tech"
+      },
+      "history": {
+        "mean_academic_only": 0.777628,
+        "mean_academic_plus_news": 0.923303,
+        "mean_full_diversity": 0.923303,
+        "step_a_gain_adding_news": 0.145675,
+        "step_b_gain_adding_tech": 0.0,
+        "total_gain_l1_to_l3": 0.145675,
+        "step_a_pct_of_total": 100.0,
+        "step_b_pct_of_total": 0.0,
+        "dominant_step": "adding_news"
+      }
+    },
+    "human_eval_score": {
+      "technology": {
+        "mean_academic_only": 3.06875,
+        "mean_academic_plus_news": 3.24375,
+        "mean_full_diversity": 3.46875,
+        "step_a_gain_adding_news": 0.175,
+        "step_b_gain_adding_tech": 0.225,
+        "total_gain_l1_to_l3": 0.4,
+        "step_a_pct_of_total": 43.75,
+        "step_b_pct_of_total": 56.25,
+        "dominant_step": "adding_tech"
+      },
+      "healthcare": {
+        "mean_academic_only": 3.3,
+        "mean_academic_plus_news": 3.56875,
+        "mean_full_diversity": 3.10625,
+        "step_a_gain_adding_news": 0.26875,
+        "step_b_gain_adding_tech": -0.4625,
+        "total_gain_l1_to_l3": -0.19375,
+        "step_a_pct_of_total": -138.71,
+        "step_b_pct_of_total": 238.71,
+        "dominant_step": "adding_tech"
+      },
+      "history": {
+        "mean_academic_only": 3.43125,
+        "mean_academic_plus_news": 4.1875,
+        "mean_full_diversity": 4.0375,
+        "step_a_gain_adding_news": 0.75625,
+        "step_b_gain_adding_tech": -0.15,
+        "total_gain_l1_to_l3": 0.60625,
+        "step_a_pct_of_total": 124.74,
+        "step_b_pct_of_total": -24.74,
+        "dominant_step": "adding_news"
+      }
+    }
+  },
+  "sdi_regression": {
+    "bertscore_f1": {
+      "simple_regression": {
+        "r_squared": 0.339281,
+        "adj_r_squared": 0.273209,
+        "sdi_coef": 0.06811,
+        "sdi_pvalue": 0.046883,
+        "sdi_significant": true,
+        "intercept": 0.762317
+      },
+      "moderated_regression": {
+        "r_squared": 0.610831,
+        "adj_r_squared": 0.464892,
+        "sdi_coef": 0.079733,
+        "vol_coef": -0.012814,
+        "interaction_coef": -0.021053,
+        "interaction_pval": 0.584379,
+        "interaction_sig": false,
+        "interpretation": "SDI effect does not significantly vary by domain volatility"
+      }
+    },
+    "hallucination_rate": {
+      "simple_regression": {
+        "r_squared": 0.181555,
+        "adj_r_squared": 0.09971,
+        "sdi_coef": 0.161089,
+        "sdi_pvalue": 0.167231,
+        "sdi_significant": false,
+        "intercept": 0.501844
+      },
+      "moderated_regression": {
+        "r_squared": 0.58684,
+        "adj_r_squared": 0.431906,
+        "sdi_coef": 0.128978,
+        "vol_coef": -0.062883,
+        "interaction_coef": -0.038764,
+        "interaction_pval": 0.76082,
+        "interaction_sig": false,
+        "interpretation": "SDI effect does not significantly vary by domain volatility"
+      }
+    },
+    "precision_at_5": {
+      "simple_regression": {
+        "r_squared": 0.272665,
+        "adj_r_squared": 0.199931,
+        "sdi_coef": 0.369599,
+        "sdi_pvalue": 0.081595,
+        "sdi_significant": false,
+        "intercept": 0.263614
+      },
+      "moderated_regression": {
+        "r_squared": 0.73383,
+        "adj_r_squared": 0.634016,
+        "sdi_coef": -0.097535,
+        "vol_coef": -0.179391,
+        "interaction_coef": 0.161316,
+        "interaction_pval": 0.408445,
+        "interaction_sig": false,
+        "interpretation": "SDI effect does not significantly vary by domain volatility"
+      }
+    },
+    "ndcg_at_5": {
+      "simple_regression": {
+        "r_squared": 0.209642,
+        "adj_r_squared": 0.130606,
+        "sdi_coef": 0.36764,
+        "sdi_pvalue": 0.134444,
+        "sdi_significant": false,
+        "intercept": 0.575262
+      },
+      "moderated_regression": {
+        "r_squared": 0.672936,
+        "adj_r_squared": 0.550287,
+        "sdi_coef": -0.096006,
+        "vol_coef": -0.196026,
+        "interaction_coef": 0.142385,
+        "interaction_pval": 0.557338,
+        "interaction_sig": false,
+        "interpretation": "SDI effect does not significantly vary by domain volatility"
+      }
+    },
+    "human_eval_score": {
+      "simple_regression": {
+        "r_squared": 0.345401,
+        "adj_r_squared": 0.279941,
+        "sdi_coef": 0.98401,
+        "sdi_pvalue": 0.044476,
+        "sdi_significant": true,
+        "intercept": 3.20992
+      },
+      "moderated_regression": {
+        "r_squared": 0.533822,
+        "adj_r_squared": 0.359006,
+        "sdi_coef": 0.939503,
+        "vol_coef": -0.181897,
+        "interaction_coef": -0.14716,
+        "interaction_pval": 0.805753,
+        "interaction_sig": false,
+        "interpretation": "SDI effect does not significantly vary by domain volatility"
+      }
+    }
+  },
+  "performance_profiles": {
+    "profiles": {
+      "Single-Source": {
+        "bertscore_f1": {
+          "mean": 0.768985,
+          "std": 0.015476,
+          "n": 4
+        },
+        "hallucination_rate": {
+          "mean": 0.51125,
+          "std": 0.084988,
+          "n": 4
+        },
+        "precision_at_5": {
+          "mean": 0.29725,
+          "std": 0.1669,
+          "n": 4
+        },
+        "ndcg_at_5": {
+          "mean": 0.607175,
+          "std": 0.202742,
+          "n": 4
+        },
+        "human_eval_score": {
+          "mean": 3.217188,
+          "std": 0.183099,
+          "n": 4
+        },
+        "rouge_l": {
+          "mean": 0.125717,
+          "std": 0.00742,
+          "n": 4
+        },
+        "meteor": {
+          "mean": 0.325572,
+          "std": 0.086581,
+          "n": 4
+        }
+      },
+      "Two-Source Mix": {
+        "bertscore_f1": {
+          "mean": 0.780601,
+          "std": 0.033473,
+          "n": 4
+        },
+        "hallucination_rate": {
+          "mean": 0.56375,
+          "std": 0.102744,
+          "n": 4
+        },
+        "precision_at_5": {
+          "mean": 0.352,
+          "std": 0.189793,
+          "n": 4
+        },
+        "ndcg_at_5": {
+          "mean": 0.678993,
+          "std": 0.212972,
+          "n": 4
+        },
+        "human_eval_score": {
+          "mean": 3.560938,
+          "std": 0.483325,
+          "n": 4
+        },
+        "rouge_l": {
+          "mean": 0.135981,
+          "std": 0.01822,
+          "n": 4
+        },
+        "meteor": {
+          "mean": 0.373417,
+          "std": 0.151081,
+          "n": 4
+        }
+      },
+      "Full Diversity": {
+        "bertscore_f1": {
+          "mean": 0.78365,
+          "std": 0.037504,
+          "n": 4
+        },
+        "hallucination_rate": {
+          "mean": 0.54,
+          "std": 0.104722,
+          "n": 4
+        },
+        "precision_at_5": {
+          "mean": 0.39275,
+          "std": 0.19292,
+          "n": 4
+        },
+        "ndcg_at_5": {
+          "mean": 0.689445,
+          "std": 0.214866,
+          "n": 4
+        },
+        "human_eval_score": {
+          "mean": 3.520312,
+          "std": 0.488604,
+          "n": 4
+        },
+        "rouge_l": {
+          "mean": 0.140239,
+          "std": 0.021876,
+          "n": 4
+        },
+        "meteor": {
+          "mean": 0.372815,
+          "std": 0.180158,
+          "n": 4
+        }
+      }
+    },
+    "rankings": {
+      "bertscore_f1": {
+        "Full Diversity": 1,
+        "Two-Source Mix": 2,
+        "Single-Source": 3
+      },
+      "hallucination_rate": {
+        "Single-Source": 1,
+        "Full Diversity": 2,
+        "Two-Source Mix": 3
+      },
+      "precision_at_5": {
+        "Full Diversity": 1,
+        "Two-Source Mix": 2,
+        "Single-Source": 3
+      },
+      "ndcg_at_5": {
+        "Full Diversity": 1,
+        "Two-Source Mix": 2,
+        "Single-Source": 3
+      },
+      "human_eval_score": {
+        "Two-Source Mix": 1,
+        "Full Diversity": 2,
+        "Single-Source": 3
+      },
+      "rouge_l": {
+        "Full Diversity": 1,
+        "Two-Source Mix": 2,
+        "Single-Source": 3
+      },
+      "meteor": {
+        "Two-Source Mix": 1,
+        "Full Diversity": 2,
+        "Single-Source": 3
+      }
+    }
+  }
+}
