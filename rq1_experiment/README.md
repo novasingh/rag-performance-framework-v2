@@ -117,7 +117,6 @@ python -m rq1_experiment.run_analysis --bertscore-batch 16
 - Pooled Cohen's kappa: **0.921** (threshold: 0.70)
 - Per dimension: relevance=0.978, correctness=0.977, freshness=0.965, hallucination=0.764
 - Evaluated on ~20% stratified sample per condition (n=40 per condition)
-- Uses verifier-mediated adjudication (Persona A + Persona B + Verifier)
 
 ## Configuration
 See `rq1_experiment/config.py` for full parameter list including:
