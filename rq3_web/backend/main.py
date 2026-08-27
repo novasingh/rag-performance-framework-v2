@@ -1,6 +1,10 @@
 import json
 import logging
+import sys
 from pathlib import Path
+
+# Add parent directory to path so we can import rq3_experiment
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,7 +16,7 @@ from rq3_experiment.config import RESULTS_DIR_RQ3
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="RQ3 Predictive Framework API")
+app = FastAPI(title="Predictive Framework API")
 
 # Enable CORS for the React frontend
 app.add_middleware(

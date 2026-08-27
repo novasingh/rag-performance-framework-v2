@@ -116,7 +116,7 @@ function App() {
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
-        <h1>Predictive Framework (RQ3)</h1>
+        <h1>Predictive Framework</h1>
         <p style={{ color: 'var(--text-secondary)' }}>Dynamically estimate RAG effectiveness based on dataset factors</p>
       </header>
 

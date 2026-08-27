@@ -1,0 +1,12 @@
+# FastAPI and Server
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.6
+
+# Data Validation
+pydantic==2.8.0
+pydantic-core==2.20.1
+
+# The rq3_experiment package should be installed from the parent project
+# Add the parent directory to PYTHONPATH or install the parent project
+# PYTHONPATH should include: path/to/rag-performance-framework-v2
